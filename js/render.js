@@ -209,9 +209,8 @@
       ]));
       sec.appendChild(h("h2", { id: p.id + "-h", class: "sec-h2", text: p.city ? `${p.label} · ${p.city}` : p.label }));
       sec.appendChild(h("div", { class: "role-line", text: p.role }));
-      const intro = h("div", { class: "cgrid" }, [h("p", { class: "lead", text: p.blurb })]);
-      if (p.figure && S.figures[p.figure]) intro.appendChild(FIG.figure(p.figure, S.figures, figN++));
-      sec.appendChild(intro);
+      sec.appendChild(h("p", { class: "lead", text: p.blurb }));
+      if (p.figure && S.figures[p.figure]) sec.appendChild(FIG.figure(p.figure, S.figures, figN++));
       if (papers.length) {
         sec.appendChild(h("div", { class: "sub-h", text: "Publications" }));
         sec.appendChild(shelf(papers.filter(x => x.featured).concat(papers.filter(x => !x.featured)).slice(0, 12)));
@@ -234,13 +233,13 @@
     const papers = S.papers.filter(p => p.collections.includes("mvp")).sort(byYearDesc);
     const posts = S.posts.filter(p => p.collections.includes("mvp")).sort((a, b) => a.date.localeCompare(b.date));
     root.appendChild(h("p", { class: "lead", text: m.intro }));
+    root.appendChild(FIG.figure("mvp-u5mr", S.figures, figN));
     root.appendChild(h("div", { class: "mvp-grid" }, [
       h("div", {}, [
         h("div", { class: "sub-h", text: "How the debate unfolded" }),
         h("ol", { class: "tl" }, m.timeline.map(t => h("li", {}, [h("span", { class: "d", text: t.date }), t.url ? h("a", Object.assign({ href: t.url }, ext), t.text) : h("span", { text: t.text })])))
       ]),
       h("div", {}, [
-        FIG.figure("mvp-u5mr", S.figures, figN),
         h("div", { class: "sub-h", text: "Papers" }),
         shelf(papers)
       ])
