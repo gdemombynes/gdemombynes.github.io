@@ -78,7 +78,7 @@
         h("p", { class: "profile", text: s.profile }),
         h("div", { class: "bio" }, s.bio.map(t => h("p", { text: t }))),
         h("dl", { class: "facts" }, [
-          h("dt", { text: "Education" }), h("dd", {}, s.education.map((e, i) => h("div", { text: `${e.degree}, ${e.inst}, ${e.year}` }))),
+          h("dt", { text: "Education" }), h("dd", {}, s.education.map(e => h("div", {}, [e.url ? h("a", Object.assign({ href: e.url }, ext), e.inst ? `${e.degree}, ${e.inst}` : e.degree) : (e.inst ? `${e.degree}, ${e.inst}` : e.degree), `, ${e.year}`]))),
           h("dt", { text: "Languages" }), h("dd", { text: s.languages.join(", ") }),
           h("dt", { text: "Citizenship" }), h("dd", { text: s.citizenship.join(" and ") })
         ]),

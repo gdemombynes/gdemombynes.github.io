@@ -18,17 +18,26 @@
     {
       "degree": "Ph.D. in Economics",
       "inst": "University of California, Berkeley",
-      "year": 2003
+      "year": 2003,
+      "url": "https://econ.berkeley.edu/"
     },
     {
       "degree": "B.A., Plan II Liberal Arts Honors Program",
       "inst": "University of Texas at Austin",
-      "year": 1995
+      "year": 1995,
+      "url": "https://liberalarts.utexas.edu/plan2/about-plan-ii/"
     },
     {
       "degree": "B.S. in Civil and Environmental Engineering",
       "inst": "University of Texas at Austin",
-      "year": 1994
+      "year": 1994,
+      "url": "https://caee.utexas.edu/"
+    },
+    {
+      "degree": "Illinois Mathematics and Science Academy",
+      "inst": null,
+      "year": 1989,
+      "url": "https://imsa.edu/"
     }
   ],
   "languages": [
