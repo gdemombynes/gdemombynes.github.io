@@ -1,5 +1,37 @@
 [
   {
+    "id": "philippines-covid-pad-2020",
+    "title": "Philippines COVID-19 Emergency Response Project: Project Appraisal Document",
+    "year": 2020,
+    "type": "report",
+    "venue": "World Bank, PAD3869",
+    "series": [
+      "P173877"
+    ],
+    "coauthors": [
+      "Sutayut Osornprasop"
+    ],
+    "url": "https://documents1.worldbank.org/curated/en/255611588366729921/pdf/Philippines-COVID-19-Emergency-Response-Project.pdf",
+    "links": [
+      {
+        "label": "Results brief (2022)",
+        "url": "https://www.worldbank.org/en/results/2022/05/30/supporting-ph-covid-19-emergency-response"
+      }
+    ],
+    "okr_handle": null,
+    "cover": null,
+    "countries": [
+      "philippines"
+    ],
+    "topics": [
+      "covid",
+      "health"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "The design document for the $100 million emergency health project Gabriel led as Task Team Leader, later expanded to $900 million to finance the national vaccination campaign."
+  },
+  {
     "id": "ai-exposure-2025",
     "title": "The Exposure of Workers to Artificial Intelligence in Low- and Middle-Income Countries",
     "year": 2025,

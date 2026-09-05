@@ -242,8 +242,49 @@
       "lon": 120.98,
       "years": "2016–2020",
       "role": "Program Leader for Human Development, Brunei, Malaysia, Philippines, and Thailand",
-      "blurb": "Four years in Manila. The work centered on why nearly one Filipino child in three is stunted, on the national ID system, on the 2019 Systematic Country Diagnostic, and, in 2020, on leading the $100 million COVID-19 Emergency Response Health Project.",
-      "figure": null
+      "blurb": "Four years in Manila. The work centered on why nearly one Filipino child in three is stunted, on the national ID system, on the 2019 Systematic Country Diagnostic, and, in 2020, on designing and leading the $100 million COVID-19 Emergency Response Health Project that grew into the country's $900 million pandemic and vaccination program.",
+      "figure": null,
+      "highlight": {
+        "kicker": "Leading the COVID-19 emergency response",
+        "title": "The Philippines COVID-19 Emergency Response Project",
+        "text": [
+          "When the pandemic reached the Philippines in March 2020, Gabriel led the World Bank team that designed and launched the country's emergency health response. As Task Team Leader, with Sutayut Osornprasop, he took a $100 million loan from concept to Board approval on 23 April 2020, in a matter of weeks, under the Bank's global COVID-19 fast-track program, with the Department of Health as implementing agency.",
+          "The project's objective was to strengthen the country's capacity to prevent, detect, and respond to COVID-19 and to build lasting public health preparedness: intensive-care and laboratory equipment for hospitals, personal protective equipment, isolation and quarantine facilities, and upgraded national and regional reference laboratories. Additional financing of $500 million in March 2021 and $300 million in December 2021 turned it into the backbone of the national vaccination campaign."
+        ],
+        "stats": [
+          {
+            "n": "$900M",
+            "l": "total World Bank financing, from a $100 million start"
+          },
+          {
+            "n": "33M",
+            "l": "vaccine doses procured and deployed nationwide"
+          },
+          {
+            "n": "500",
+            "l": "mechanical ventilators, plus 119 portable x-ray machines and 68 ambulances"
+          },
+          {
+            "n": "25×",
+            "l": "increase in RT-PCR testing capacity, from 1,000 to about 25,000 tests a day"
+          }
+        ],
+        "links": [
+          {
+            "label": "Project appraisal document (2020)",
+            "url": "https://documents1.worldbank.org/curated/en/255611588366729921/pdf/Philippines-COVID-19-Emergency-Response-Project.pdf"
+          },
+          {
+            "label": "Approval press release (23 April 2020)",
+            "url": "https://www.worldbank.org/en/news/press-release/2020/04/23/philippines-world-bank-approves-usd100m-to-support-covid-19-emergency-response"
+          },
+          {
+            "label": "Results brief (2022)",
+            "url": "https://www.worldbank.org/en/results/2022/05/30/supporting-ph-covid-19-emergency-response"
+          }
+        ],
+        "source": "Sources: World Bank Project Appraisal Document PAD3869 (April 2020); World Bank press releases of 23 April 2020, 11 March 2021, and 21 December 2021; World Bank results brief, 30 May 2022."
+      }
     },
     {
       "id": "vietnam",

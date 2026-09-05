@@ -206,6 +206,19 @@ section.sec:first-of-type { border-top: 0; }
 .feature .cta { font-family: var(--sans); font-size: .95rem; }
 @media (max-width: 700px) { .feature { grid-template-columns: 1fr; } .feature .fbody { padding: 18px 20px 20px; } .feature .fimg { max-height: 220px; } }
 
+/* ---------- Highlight card (country) ---------- */
+.highlight { border: 1px solid var(--hair); border-left: 4px solid var(--accent); background: var(--surface); padding: 24px 28px 20px; margin: 8px 0 30px; box-shadow: var(--cover-shadow); max-width: 980px; }
+.highlight .hk { font-family: var(--mono); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 8px; }
+.highlight h3 { font-size: 1.5rem; margin-bottom: 14px; max-width: 30ch; }
+.highlight .hgrid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(220px, 1fr); gap: 28px 40px; align-items: start; }
+.highlight .htext p { font-size: 1rem; max-width: 60ch; }
+.highlight .hstats { display: grid; gap: 14px; border-left: 1px solid var(--hair); padding-left: 24px; }
+.highlight .stat .n { font-family: var(--serif); font-size: 1.9rem; line-height: 1; color: var(--accent-ink); font-variant-numeric: lining-nums; }
+.highlight .stat .l { font-family: var(--sans); font-size: .95rem; color: var(--muted); margin-top: 3px; max-width: 26ch; }
+.highlight .hlinks { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 16px; font-family: var(--sans); font-size: .95rem; }
+.highlight .hsrc { font-family: var(--mono); font-size: .85rem; color: var(--muted); margin-top: 10px; }
+@media (max-width: 760px) { .highlight { padding: 18px 20px; } .highlight .hgrid { grid-template-columns: 1fr; } .highlight .hstats { border-left: 0; padding-left: 0; grid-template-columns: 1fr 1fr; } }
+
 /* ---------- Figures ---------- */
 figure.fig { margin: 24px 0 30px; max-width: 720px; }
 figure.fig svg { width: 100%; height: auto; display: block; overflow: visible; }

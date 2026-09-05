@@ -187,6 +187,19 @@
     ])));
   }
 
+  function highlightCard(x) {
+    return h("article", { class: "highlight reveal" }, [
+      h("div", { class: "hk", text: x.kicker }),
+      h("h3", { text: x.title }),
+      h("div", { class: "hgrid" }, [
+        h("div", { class: "htext" }, x.text.map(t => h("p", { text: t }))),
+        h("div", { class: "hstats" }, x.stats.map(s => h("div", { class: "stat" }, [h("div", { class: "n", text: s.n }), h("div", { class: "l", text: s.l })])))
+      ]),
+      h("div", { class: "hlinks" }, x.links.map(l => h("a", Object.assign({ href: l.url }, ext), l.label + " ↗"))),
+      x.source ? h("div", { class: "hsrc", text: x.source }) : null
+    ]);
+  }
+
   // ---------- Places
   async function renderPlaces(S) {
     const root = $("#places");
@@ -210,6 +223,7 @@
       sec.appendChild(h("h2", { id: p.id + "-h", class: "sec-h2", text: p.city ? `${p.label} · ${p.city}` : p.label }));
       sec.appendChild(h("div", { class: "role-line", text: p.role }));
       sec.appendChild(h("p", { class: "lead", text: p.blurb }));
+      if (p.highlight) sec.appendChild(highlightCard(p.highlight));
       if (p.figure && S.figures[p.figure]) sec.appendChild(FIG.figure(p.figure, S.figures, figN++));
       if (papers.length) {
         sec.appendChild(h("div", { class: "sub-h", text: "Publications" }));
