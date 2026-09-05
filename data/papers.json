@@ -35,31 +35,6 @@
     "cover_source": "okr"
   },
   {
-    "id": "promise-productivity-2025",
-    "title": "From Promise to Productivity: Making Digital Work for People and Jobs",
-    "year": 2025,
-    "type": "report",
-    "venue": "World Bank, Human Capital Project",
-    "series": [],
-    "coauthors": [],
-    "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099062525142534658",
-    "links": [],
-    "okr_handle": "10986/43401",
-    "countries": [],
-    "topics": [
-      "ai",
-      "digital"
-    ],
-    "collections": [
-      "ai"
-    ],
-    "featured": false,
-    "blurb": "A review of more than 300 digital and AI initiatives in health, education, social protection, and jobs, on why past investments fell short and what makes digital work for human capital.",
-    "okr_match": 0.63,
-    "cover": "assets/covers/promise-productivity-2025.jpg",
-    "cover_source": "okr"
-  },
-  {
     "id": "covid-gender-2024",
     "title": "COVID-19 increased existing gender mortality gaps in high-income more than middle-income countries",
     "year": 2024,
