@@ -17,7 +17,7 @@
 
   // Simple horizontal bars: series[0].points = [[label, value], ...]
   function barChart(f) {
-    const pts = f.series[0].points, W = 640, rowH = 40, left = 200, right = 64, top = 8;
+    const pts = f.series[0].points, W = 640, rowH = 42, left = 215, right = 70, top = 8;
     const H = top + pts.length * rowH + 8;
     const max = Math.max(...pts.map(p => p[1])) * 1.08;
     const s = svgRoot(W, H, f.title, f.note || f.unit);
@@ -92,7 +92,7 @@
     });
     // legend
     ser.forEach((sv, si) => {
-      const lx = L + si * 240, ly = 14;
+      const lx = L + si * 270, ly = 14;
       const cls = opts && opts.redSecond && si === 1 ? "s-red" : (si === 0 ? "s0" : "s1");
       s.appendChild(el("rect", { x: lx, y: ly - 11, width: 14, height: 14, class: cls }));
       s.appendChild(el("text", { x: lx + 20, y: ly + 1, class: "legend" }, sv.label));
@@ -176,9 +176,12 @@
       const start = X(e.start), end = X((e.end || 2026.7) + (e.end ? 0.9 : 0));
       const w = Math.max(end - start, 6);
       s.appendChild(el("rect", { x: start, y: y + 6, width: w, height: 16, class: "bar" + (i % 2 ? " alt" : "") }));
-      const label = (e.n ? e.n + " " : "") + e.city + " · " + e.role;
-      const fits = w > label.length * 7.4;
-      s.appendChild(el("text", { x: fits ? start + 6 : (end + 8 > W - 230 ? start - 8 : end + 8), y: y + 18, class: "lbl", "text-anchor": fits ? "start" : (end + 8 > W - 230 ? "end" : "start"), fill: fits ? "var(--paper)" : null }, label));
+      const role = e.role.replace("Poverty Reduction and Economic Management", "PREM").replace("Latin America and the Caribbean Poverty Group", "LAC Poverty Group");
+      const label = (e.n ? e.n + " " : "") + e.city + " · " + role;
+      const labelW = label.length * 8.2;
+      const fits = w > labelW;
+      const leftSide = !fits && end + 8 + labelW > W && start - 8 - labelW >= 0;
+      s.appendChild(el("text", { x: fits ? start + 6 : (leftSide ? start - 8 : end + 8), y: y + 18, class: "lbl", "text-anchor": fits ? "start" : (leftSide ? "end" : "start"), fill: fits ? "var(--paper)" : null }, label));
     });
     return s;
   }
@@ -199,12 +202,12 @@
     places.filter(p => !p.regional).forEach(p => {
       const x = 200 + (p.lon / 180) * 175, y = 200 - (p.lat / 90) * 150;
       const g = el("g", { class: "mk" + (p.current ? " cur" : "") });
-      g.appendChild(el("circle", { cx: x, cy: y, r: 6 }));
-      g.appendChild(el("text", { x: x + 10, y: y + 5, class: "city", style: "font-size:13px" }, p.city));
+      g.appendChild(el("circle", { cx: x, cy: y, r: 7 }));
+      g.appendChild(el("text", { x: x + 12, y: y + 5, class: "city", style: "font-size:19px" }, p.city));
       s.appendChild(g);
     });
     const m = el("text", { x: 22, y: 380, class: "lbl" }, "G · M · D");
-    m.setAttribute("style", "font-family: var(--serif); font-size: 22px; fill: var(--ink); letter-spacing: .2em;");
+    m.setAttribute("style", "font-family: var(--serif); font-size: 26px; fill: var(--ink); letter-spacing: .2em;");
     s.appendChild(m);
     return s;
   }
