@@ -173,7 +173,7 @@
     }
     rows.forEach((e, i) => {
       const y = T + i * rowH;
-      const start = X(e.start), end = X((e.end || 2026.7) + (e.end ? 0.9 : 0));
+      const start = X(e.start), end = X(e.end == null ? 2026.7 : (e.end === e.start ? e.end + 0.9 : e.end));
       const w = Math.max(end - start, 6);
       s.appendChild(el("rect", { x: start, y: y + 6, width: w, height: 16, class: "bar" + (i % 2 ? " alt" : "") }));
       const role = e.role.replace("Poverty Reduction and Economic Management", "PREM").replace("Latin America and the Caribbean Poverty Group", "LAC Poverty Group");
