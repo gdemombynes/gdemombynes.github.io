@@ -73,7 +73,7 @@
     root.appendChild(h("div", { class: "hero-grid" }, [
       h("div", {}, [
         h("div", { class: "kicker", text: s.tagline }),
-        h("h1", {}, [nameParts[0] + " ", h("span", { class: "mid", text: nameParts[1] + " " }), nameParts.slice(2).join(" ")]),
+        h("h1", {}, nameParts.length > 2 ? [nameParts[0] + " ", h("span", { class: "mid", text: nameParts[1] + " " }), nameParts.slice(2).join(" ")] : [nameParts[0], h("br"), nameParts.slice(1).join(" ")]),
         h("p", { class: "role", text: s.headline }),
         h("p", { class: "profile", text: s.profile }),
         h("div", { class: "bio" }, s.bio.map(t => h("p", { text: t }))),

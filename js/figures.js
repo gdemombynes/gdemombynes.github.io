@@ -206,7 +206,7 @@
       g.appendChild(el("text", { x: x + 12, y: y + 5, class: "city", style: "font-size:19px" }, p.city));
       s.appendChild(g);
     });
-    const m = el("text", { x: 22, y: 380, class: "lbl" }, "G · M · D");
+    const m = el("text", { x: 22, y: 380, class: "lbl" }, "G · D");
     m.setAttribute("style", "font-family: var(--serif); font-size: 26px; fill: var(--ink); letter-spacing: .2em;");
     s.appendChild(m);
     return s;
