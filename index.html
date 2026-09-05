@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabriel Demombynes · Economist</title>
+<meta name="description" content="Gabriel Demombynes is a development economist and Manager of the Human Capital Project at the World Bank. Research on AI and human capital, the Millennium Villages evaluation, and work in Colombia, the Philippines, Vietnam, Kenya, and Latin America.">
+<meta property="og:title" content="Gabriel Demombynes · Economist">
+<meta property="og:description" content="Development economist. AI and human capital, impact evaluation, and two decades of work across Africa, East Asia, and Latin America.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://gdemombynes.github.io/assets/media/china-daily-2024.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+  // Apply the saved theme before first paint to avoid a flash.
+  try { var q = new URLSearchParams(location.search).get("theme"); var t = q || localStorage.getItem("gd-theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="#about">Gabriel Demombynes <small>Economist</small></a>
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#ai">AI &amp; human capital</a>
+        <a href="#places">Places</a>
+        <a href="#mvp">Millennium Villages</a>
+        <a href="#papers">Papers</a>
+        <a href="#writing">Writing</a>
+        <button class="theme-btn" type="button">Dark</button>
+      </nav>
+      <details class="nav-details">
+        <summary aria-label="Open menu">Menu</summary>
+        <nav class="nav" aria-label="Sections (mobile)">
+          <a href="#about">About</a>
+          <a href="#ai">AI &amp; human capital</a>
+          <a href="#places">Places</a>
+          <a href="#mvp">Millennium Villages</a>
+          <a href="#papers">Papers</a>
+          <a href="#writing">Writing</a>
+          <button class="theme-btn" type="button">Dark</button>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <aside class="rail" aria-label="Table of contents">
+    <ol>
+      <li><a href="#about"><span class="n">§ 0</span> About</a></li>
+      <li><a href="#ai"><span class="n">§ 1</span> AI &amp; human capital</a></li>
+      <li><a href="#places"><span class="n">§ 2</span> Places</a></li>
+      <li class="sub"><a href="#colombia"><span class="n">2.1</span> Colombia</a></li>
+      <li class="sub"><a href="#philippines"><span class="n">2.2</span> Philippines</a></li>
+      <li class="sub"><a href="#vietnam"><span class="n">2.3</span> Vietnam</a></li>
+      <li class="sub"><a href="#kenya"><span class="n">2.4</span> Kenya</a></li>
+      <li class="sub"><a href="#latam"><span class="n">2.5</span> Latin America</a></li>
+      <li><a href="#mvp"><span class="n">§ 3</span> Millennium Villages</a></li>
+      <li><a href="#papers"><span class="n">§ 4</span> Papers</a></li>
+      <li><a href="#writing"><span class="n">§ 5</span> Writing</a></li>
+    </ol>
+  </aside>
+
+  <main class="content" id="main">
+    <section class="sec hero" id="about" aria-label="About Gabriel Demombynes"></section>
+
+    <section class="sec" id="ai" aria-labelledby="ai-h">
+      <div class="runhead"><span class="num">§ 1</span><span>Now</span><span>2023–present</span></div>
+      <h2 id="ai-h">AI and human capital</h2>
+    </section>
+
+    <section class="sec" id="places" aria-labelledby="places-h">
+      <div class="runhead"><span class="num">§ 2</span><span>Places</span><span>2005–2023</span></div>
+      <h2 id="places-h">Five places, eighteen years</h2>
+      <p class="lead">Gabriel's work has been shaped by where he has lived. Each posting produced a body of research and a set of arguments about what the evidence says. Choose a place on the map or in the list.</p>
+    </section>
+    <div id="country-sections"></div>
+
+    <section class="sec mvp" id="mvp" aria-labelledby="mvp-h">
+      <div class="runhead"><span class="num">§ 3</span><span>Case study</span><span>2010–2013</span></div>
+      <h2 id="mvp-h">The Millennium Villages evaluation</h2>
+    </section>
+
+    <section class="sec" id="papers" aria-labelledby="papers-h">
+      <div class="runhead"><span class="num">§ 4</span><span>Publications</span><span>2002–2025</span></div>
+      <h2 id="papers-h">Papers, books, and reports</h2>
+    </section>
+
+    <section class="sec" id="writing" aria-labelledby="writing-h">
+      <div class="runhead"><span class="num">§ 5</span><span>Writing</span><span>2010–2026</span></div>
+      <h2 id="writing-h">Blog posts, op-eds, and podcasts</h2>
+    </section>
+
+    <footer class="foot" id="foot"></footer>
+  </main>
+</div>
+
+<script src="js/data-loader.js"></script>
+<script src="js/figures.js"></script>
+<script src="js/render.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  window.SITE_READY.then(S => renderAll(S)).then(() => initUI()).catch(err => {
+    console.error(err);
+    var m = document.getElementById("main");
+    var p = document.createElement("p");
+    p.className = "lead";
+    p.textContent = "This page needs to be served over HTTP (for example, python3 -m http.server) so that it can load its data files.";
+    m.insertBefore(p, m.firstChild);
+  });
+</script>
+</body>
+</html>

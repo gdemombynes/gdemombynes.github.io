@@ -1,0 +1,42 @@
+{
+  "ai-exposure": {
+    "title": "Mean occupational exposure to AI, by country income group",
+    "unit": "Normalized AI occupational exposure index, 0 to 100",
+    "source": "Demombynes, Langbein, and Weber (2025), World Bank Policy Research Working Paper 11057, Figure 2; harmonized labor force surveys for 25 countries.",
+    "note": "Only 12 percent of workers in low-income countries and 15 percent in lower-middle-income countries are in high-exposure occupations.",
+    "type": "bar",
+    "series": [{"label": "Mean exposure", "points": [["Low income", 37], ["Lower-middle income", 44], ["Upper-middle income", 49], ["High income", 63]]}]
+  },
+  "kenya-imr": {
+    "title": "Infant mortality in Kenya",
+    "unit": "Deaths per 1,000 live births, five years preceding each survey",
+    "source": "Kenya Demographic and Health Surveys 1998, 2003, 2008–09, 2014, and 2022. Demombynes and Trommlerová (2016) attribute most of the 2003–08 decline in malaria-endemic zones to insecticide-treated bednets.",
+    "note": null,
+    "type": "line",
+    "series": [{"label": "Infant mortality rate", "points": [[1998, 74], [2003, 77], [2008, 52], [2014, 39], [2022, 32]]}]
+  },
+  "covid-under65": {
+    "title": "Share of 2020 pandemic deaths among people under 65",
+    "unit": "Percent of deaths",
+    "source": "Demombynes, de Walque, Gubbins, Urdinola, and Veillard (2022), BMJ Open; official COVID-19 death counts for 64 countries and excess-death estimates for 41.",
+    "note": "Age-mortality curves are flatter in lower-income countries, only partly because their populations are younger.",
+    "type": "grouped-bar",
+    "categories": ["High income", "Upper-middle income", "Lower-middle income"],
+    "series": [
+      {"label": "Official COVID-19 deaths", "points": [11, 40, 54]},
+      {"label": "Excess deaths", "points": [11, 37, null]}
+    ]
+  },
+  "mvp-u5mr": {
+    "title": "Annual decline in under-five mortality: the Millennium Villages claim and the correction",
+    "unit": "Percent per year",
+    "source": "MVP claim: Pronyk et al., The Lancet (2012). Correction: Demombynes and Prydz, Development Impact blog (10 May 2012), using the elapsed time actually covered and current national DHS trends.",
+    "note": "The Lancet paper reported child mortality falling three times faster at MVP sites than in national rural trends. After correcting an error in elapsed time and using contemporaneous comparison data, the sites' decline was slower than the national one.",
+    "type": "paired-bar",
+    "categories": ["As claimed in The Lancet", "After correction"],
+    "series": [
+      {"label": "Millennium Village sites", "points": [7.8, 5.9]},
+      {"label": "National comparison", "points": [2.6, 6.4]}
+    ]
+  }
+}

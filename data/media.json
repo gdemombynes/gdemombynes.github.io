@@ -1,0 +1,14 @@
+[
+  {"id":"hf-2025-10-poverty","kind":"podcast","title":"Can AI End World Poverty?","outlet":"HELLO FUTURE with Kevin Cirilli (iHeartPodcasts)","date":"2025-10-29","duration":"15 min",
+   "url":"https://podcasts.apple.com/us/podcast/hello-future-can-ai-end-world-poverty/id1842931660?i=1000734031757",
+   "links":[{"label":"Apple Podcasts","url":"https://podcasts.apple.com/us/podcast/hello-future-can-ai-end-world-poverty/id1842931660?i=1000734031757"},{"label":"Omny","url":"https://omny.fm/shows/meet-the-future-with-kevin-cirilli/hello-future-can-ai-end-world-poverty"}],
+   "blurb":"Recorded at the 2025 World Bank–IMF Annual Meetings: what the AI revolution looks like for 3.5 billion people in the Global South, from farmers with smartphones to teachers in classrooms without Wi-Fi, and why electricity, not algorithms, may be the biggest barrier."},
+  {"id":"hf-2025-11-divide","kind":"podcast","title":"The Great Divide: Can AI Close (or Widen) the World's Wealth Gap?","outlet":"HELLO FUTURE with Kevin Cirilli (iHeartPodcasts)","date":"2025-11-03","duration":"14 min",
+   "url":"https://www.iheart.com/podcast/1119-hello-future-with-kevin-c-297377454/episode/hello-future-the-great-divide-304483528/",
+   "links":[{"label":"iHeart","url":"https://www.iheart.com/podcast/1119-hello-future-with-kevin-c-297377454/episode/hello-future-the-great-divide-304483528/"},{"label":"Omny","url":"https://omny.fm/shows/meet-the-future-with-kevin-cirilli/hello-future-the-great-divide-can-ai-close-or-widen-the-worlds-wealth-gap"}],
+   "blurb":"Part two: which jobs are most exposed to AI, why women and urban workers are likely to feel the first wave, and what happens when AI meets energy poverty."},
+  {"id":"economist-2025","kind":"interview","title":"Interviewed on AI and development","outlet":"The Economist","date":"2025","duration":null,"url":null,"links":[],"blurb":null},
+  {"id":"cgd-2025-10-evaluating-ai","kind":"event","title":"Evaluating AI: What's New and Why the Development Sector Should Care","outlet":"Center for Global Development","date":"2025-10-14","duration":null,
+   "url":"https://www.cgdev.org/event/evaluating-ai-whats-new-and-why-development-sector-should-care","links":[],
+   "blurb":"Panel with IDinsight, the Agency Fund, and OpenAI on how to evaluate generative AI tools in developing countries."}
+]

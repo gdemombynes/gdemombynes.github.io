@@ -1,0 +1,998 @@
+[
+  {
+    "id": "ai-exposure-2025",
+    "title": "The Exposure of Workers to Artificial Intelligence in Low- and Middle-Income Countries",
+    "year": 2025,
+    "type": "wps",
+    "venue": "World Bank Policy Research Working Paper 11057",
+    "series": [
+      "WPS 11057"
+    ],
+    "coauthors": [
+      "Jörg Langbein",
+      "Michael Weber"
+    ],
+    "url": "https://hdl.handle.net/10986/42765",
+    "links": [
+      {
+        "label": "IDEAS",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/11057.html"
+      }
+    ],
+    "okr_handle": "10986/42765",
+    "countries": [],
+    "topics": [
+      "ai",
+      "jobs"
+    ],
+    "collections": [
+      "ai"
+    ],
+    "featured": true,
+    "blurb": "Applies an AI occupational exposure measure to harmonized labor force surveys for 25 countries covering 3.5 billion people. Exposure rises with education and urban residence, falls with country income, and is limited by lack of electricity. Cited in the World Development Report 2026.",
+    "figure": "ai-exposure",
+    "cover": "assets/covers/ai-exposure-2025.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "promise-productivity-2025",
+    "title": "From Promise to Productivity: Making Digital Work for People and Jobs",
+    "year": 2025,
+    "type": "report",
+    "venue": "World Bank, Human Capital Project",
+    "series": [],
+    "coauthors": [],
+    "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099062525142534658",
+    "links": [],
+    "okr_handle": "10986/43401",
+    "countries": [],
+    "topics": [
+      "ai",
+      "digital"
+    ],
+    "collections": [
+      "ai"
+    ],
+    "featured": false,
+    "blurb": "A review of more than 300 digital and AI initiatives in health, education, social protection, and jobs, on why past investments fell short and what makes digital work for human capital.",
+    "okr_match": 0.63,
+    "cover": "assets/covers/promise-productivity-2025.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "covid-gender-2024",
+    "title": "COVID-19 increased existing gender mortality gaps in high-income more than middle-income countries",
+    "year": 2024,
+    "type": "journal",
+    "venue": "International Journal of Infectious Diseases 148",
+    "series": [],
+    "coauthors": [
+      "Kathleen Beegle",
+      "Damien de Walque",
+      "Paul Gubbins",
+      "Jeremy Veillard"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Demombynes+Beegle+gender+mortality+gaps+COVID-19",
+    "links": [],
+    "okr_handle": "10986/42418",
+    "countries": [
+      "latam"
+    ],
+    "topics": [
+      "covid",
+      "health"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "okr_match": 1.05,
+    "cover": "assets/covers/covid-gender-2024.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "colombia-learning-poverty-2023",
+    "title": "Learning Poverty at the Local Level in Colombia",
+    "year": 2023,
+    "type": "wps",
+    "venue": "World Bank Policy Research Working Paper 10498",
+    "series": [
+      "WPS 10498"
+    ],
+    "coauthors": [
+      "João Pedro Azevedo",
+      "Yi Ning Wong"
+    ],
+    "url": "https://ideas.repec.org/p/wbk/wbrwps/10498.html",
+    "links": [],
+    "okr_handle": "10986/40008",
+    "countries": [
+      "colombia"
+    ],
+    "topics": [
+      "education"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Extends the learning poverty measure to every municipality in Colombia, exposing a sharp center-periphery divide behind the national average.",
+    "okr_match": 1.05,
+    "cover": "assets/covers/colombia-learning-poverty-2023.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "colombia-scd-2022",
+    "title": "Colombia Systematic Country Diagnostic Update: Together for a Better Future",
+    "year": 2022,
+    "type": "report",
+    "venue": "World Bank Group",
+    "series": [],
+    "coauthors": [
+      "Donato De Rosa",
+      "Juan Pablo Celis Gómez"
+    ],
+    "url": "https://openknowledge.worldbank.org/entities/publication/fd1c7d66-43b9-5c6f-966d-7bf7d83b8e08",
+    "links": [],
+    "okr_handle": "10986/37619",
+    "countries": [
+      "colombia"
+    ],
+    "topics": [
+      "diagnostic"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Led the World Bank Group team that prepared the 2022 update of Colombia's country diagnostic.",
+    "okr_match": 0.8,
+    "cover": "assets/covers/colombia-scd-2022.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "covid-age-mortality-2022",
+    "title": "Are COVID-19 age-mortality curves for 2020 flatter in developing countries? Evidence from a cross-sectional observational study of population-level official death counts and excess deaths estimates",
+    "year": 2022,
+    "type": "journal",
+    "venue": "BMJ Open 12(11)",
+    "series": [
+      "WPS 9313 (2020)",
+      "WPS 9807 (2021)"
+    ],
+    "coauthors": [
+      "Damien de Walque",
+      "Paul Gubbins",
+      "Beatriz Piedad Urdinola",
+      "Jeremy Veillard"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36351719/",
+    "links": [
+      {
+        "label": "WPS 9313",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/9313.html"
+      },
+      {
+        "label": "WPS 9807",
+        "url": "https://documents1.worldbank.org/curated/en/718461634217653573/pdf/COVID-19-Age-Mortality-Curves-for-2020-Are-Flatter-in-Developing-Countries-Using-Both-Official-Death-Counts-and-Excess-Deaths.pdf"
+      }
+    ],
+    "okr_handle": null,
+    "countries": [
+      "latam"
+    ],
+    "topics": [
+      "covid",
+      "health"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Across 64 countries, a far larger share of pandemic deaths fell on people under 65 in middle-income countries than in high-income ones, and population age structure explains only part of the gap.",
+    "figure": "covid-under65",
+    "cover": null
+  },
+  {
+    "id": "philippines-undernutrition-2021",
+    "title": "Undernutrition in the Philippines: Scale, Scope, and Opportunities for Nutrition Policy and Programming",
+    "year": 2021,
+    "type": "book",
+    "venue": "World Bank, International Development in Focus",
+    "series": [],
+    "coauthors": [
+      "Nkosinathi Mbuya",
+      "Sharon Faye Piza",
+      "Ann Jillian Adona"
+    ],
+    "url": "https://openknowledge.worldbank.org/handle/10986/35530",
+    "links": [],
+    "okr_handle": "10986/35530",
+    "countries": [
+      "philippines"
+    ],
+    "topics": [
+      "nutrition"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Nearly one child in three in the Philippines is stunted, a rate essentially unchanged in a decade, at an estimated cost of 1.5 percent of GDP. The report sets out what a serious national nutrition response would take.",
+    "cover": "assets/covers/philippines-undernutrition-2021.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "philippines-stunting-why-2020",
+    "title": "Why Are So Many Children Stunted in the Philippines?",
+    "year": 2020,
+    "type": "wps",
+    "venue": "World Bank",
+    "series": [],
+    "coauthors": [
+      "Mario Capanzana",
+      "Paul Gubbins"
+    ],
+    "url": "https://thedocs.worldbank.org/en/doc/823021598886801368-0090022020/original/TF0A8125WhyAreSoManyChildrenStuntedinthePhilippines.pdf",
+    "links": [],
+    "okr_handle": null,
+    "countries": [
+      "philippines"
+    ],
+    "topics": [
+      "nutrition"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "cover": null
+  },
+  {
+    "id": "philippines-mind-over-matter-2020",
+    "title": "Mind Over Matter in the Philippines: A Study of Key Stakeholders' Perceptions of Childhood Stunting",
+    "year": 2020,
+    "type": "report",
+    "venue": "World Bank",
+    "series": [],
+    "coauthors": [
+      "Iman Sen",
+      "Nkosinathi Mbuya",
+      "Varun Gauri"
+    ],
+    "url": "https://documents1.worldbank.org/curated/en/133001597656068078/pdf/Mind-Over-Matter-in-the-Philippines-A-Study-of-Key-Stakeholders-Perceptions-of-Childhood-Stunting.pdf",
+    "links": [],
+    "okr_handle": null,
+    "countries": [
+      "philippines"
+    ],
+    "topics": [
+      "nutrition"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "cover": null
+  },
+  {
+    "id": "philippines-scd-2019",
+    "title": "Philippines Systematic Country Diagnostic: Realizing the Filipino Dream for 2040",
+    "year": 2019,
+    "type": "report",
+    "venue": "World Bank Group",
+    "series": [],
+    "coauthors": [],
+    "url": "https://hdl.handle.net/10986/32646",
+    "links": [],
+    "okr_handle": "10986/32646",
+    "okr_query": "Philippines Systematic Country Diagnostic Realizing the Filipino Dream for 2040",
+    "countries": [
+      "philippines"
+    ],
+    "topics": [
+      "diagnostic"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Led preparation of the World Bank Group's diagnostic for the Philippines.",
+    "okr_match": 0.71,
+    "cover": "assets/covers/philippines-scd-2019.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "philippines-socioemotional-2017",
+    "title": "Developing Socioemotional Skills for the Philippines' Labor Market",
+    "year": 2017,
+    "type": "book",
+    "venue": "World Bank, Directions in Development",
+    "series": [],
+    "coauthors": [],
+    "url": "https://hdl.handle.net/10986/28381",
+    "links": [
+      {
+        "label": "ADB Development Asia summary",
+        "url": "https://development.asia/summary/developing-social-and-emotional-skills-critical-workplace"
+      }
+    ],
+    "okr_handle": "10986/28381",
+    "okr_query": "Developing Socioemotional Skills for the Philippines' Labor Market",
+    "countries": [
+      "philippines"
+    ],
+    "topics": [
+      "skills"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": "Filipinos with stronger socioemotional skills are more likely to finish secondary school, find work, and earn more.",
+    "okr_match": 1.05,
+    "cover": "assets/covers/philippines-socioemotional-2017.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "vietnam-ho-khau-2016",
+    "title": "Vietnam's Household Registration System",
+    "year": 2016,
+    "type": "book",
+    "venue": "World Bank and Vietnam Academy of Social Sciences, Hong Duc Publishing House",
+    "series": [],
+    "coauthors": [
+      "Linh Hoang Vu"
+    ],
+    "url": "https://openknowledge.worldbank.org/entities/publication/06714dcb-3d68-5e43-9865-57f84e0b87ee",
+    "links": [
+      {
+        "label": "Survey microdata",
+        "url": "https://microdata.worldbank.org/index.php/catalog/2729"
+      }
+    ],
+    "okr_handle": "10986/24594",
+    "countries": [
+      "vietnam"
+    ],
+    "topics": [
+      "migration",
+      "services"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "The first systematic study of hộ khẩu, the registration system that shapes migrants' access to schools, health care, and jobs in Vietnam's cities, built on a purpose-designed 2015 survey.",
+    "cover": "assets/covers/vietnam-ho-khau-2016.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "vietnam-2035-2016",
+    "title": "Vietnam 2035: Toward Prosperity, Creativity, Equity, and Democracy",
+    "year": 2016,
+    "type": "book",
+    "venue": "World Bank Group and Ministry of Planning and Investment of Vietnam",
+    "series": [],
+    "coauthors": [],
+    "url": "https://openknowledge.worldbank.org/handle/10986/23724",
+    "links": [],
+    "okr_handle": "10986/23724",
+    "countries": [
+      "vietnam"
+    ],
+    "topics": [
+      "diagnostic"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Led the human development pillar of the joint Government of Vietnam–World Bank long-term vision study.",
+    "cover": "assets/covers/vietnam-2035-2016.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "vietnam-health-2016",
+    "title": "Health Care Equity and Quality in Vietnam: Findings from the Vietnam District and Commune Health Facility Survey",
+    "year": 2016,
+    "type": "report",
+    "venue": "World Bank",
+    "series": [],
+    "coauthors": [
+      "Kelly Hurt"
+    ],
+    "url": "https://microdata.worldbank.org/index.php/catalog/2728",
+    "links": [],
+    "okr_handle": null,
+    "okr_query": "Quality and equity in basic health care services in Vietnam",
+    "countries": [
+      "vietnam"
+    ],
+    "topics": [
+      "health"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "cover": null
+  },
+  {
+    "id": "vietnam-scd-2016",
+    "title": "Vietnam Systematic Country Diagnostic",
+    "year": 2016,
+    "type": "report",
+    "venue": "World Bank Group",
+    "series": [],
+    "coauthors": [],
+    "url": null,
+    "links": [],
+    "okr_handle": null,
+    "okr_query": "Vietnam Systematic Country Diagnostic 2016",
+    "countries": [
+      "vietnam"
+    ],
+    "topics": [
+      "diagnostic"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "cover": null
+  },
+  {
+    "id": "kenya-infant-mortality-2016",
+    "title": "What Has Driven the Decline of Infant Mortality in Kenya in the 2000s?",
+    "year": 2016,
+    "type": "journal",
+    "venue": "Economics and Human Biology 21",
+    "series": [
+      "WPS 6057 (2012)"
+    ],
+    "coauthors": [
+      "Sofia Karina Trommlerová"
+    ],
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1570677X1500091X",
+    "links": [
+      {
+        "label": "WPS 6057",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/6057.html"
+      }
+    ],
+    "okr_handle": "10986/23672",
+    "okr_query": "What has driven the decline of infant mortality in Kenya",
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "health"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Kenya's infant mortality fell 7.6 percent a year between 2003 and 2008, the fastest decline in the region. Up to three quarters of the drop in malaria-endemic zones is linked to the spread of insecticide-treated bednets.",
+    "figure": "kenya-imr",
+    "okr_match": 1.0,
+    "cover": null
+  },
+  {
+    "id": "costing-data-revolution-2015",
+    "title": "Costing a Data Revolution",
+    "year": 2015,
+    "type": "journal",
+    "venue": "World Economics 16(3)",
+    "series": [
+      "CGD Working Paper 383 (2014)"
+    ],
+    "coauthors": [
+      "Justin Sandefur"
+    ],
+    "url": "https://www.cgdev.org/publication/costing-data-revolution-working-paper-383",
+    "links": [
+      {
+        "label": "SSRN",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2622756"
+      },
+      {
+        "label": "Copenhagen Consensus",
+        "url": "https://copenhagenconsensus.com/publication/post-2015-consensus-data-development-perspective-demombynes-sandefur"
+      }
+    ],
+    "okr_handle": null,
+    "countries": [],
+    "topics": [
+      "data"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": "What would it actually cost to give every poor country the household surveys, censuses, and vital statistics the post-2015 goals assume?",
+    "cover": null
+  },
+  {
+    "id": "mobile-panel-2014",
+    "title": "Collecting High Frequency Panel Data in Africa Using Mobile Phone Interviews",
+    "year": 2014,
+    "type": "journal",
+    "venue": "Canadian Journal of Development Studies 35(1)",
+    "series": [
+      "WPS 6097 (2012)",
+      "Chapter in Measuring African Development (2015)"
+    ],
+    "coauthors": [
+      "Kevin Croke",
+      "Andrew Dabalen",
+      "Marcelo Giugale",
+      "Johannes Hoogeveen"
+    ],
+    "url": "https://hdl.handle.net/10986/20462",
+    "links": [
+      {
+        "label": "WPS 6097",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/6097.html"
+      },
+      {
+        "label": "Journal version",
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/02255189.2014.884939"
+      }
+    ],
+    "okr_handle": "10986/20462",
+    "okr_query": "Collecting high frequency panel data in Africa using mobile phone interviews",
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "data"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": "Early evidence from Tanzania and South Sudan on running panel surveys by mobile phone.",
+    "okr_match": 1.05,
+    "cover": "assets/covers/mobile-panel-2014.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "south-sudan-mobile-2013",
+    "title": "Challenges and Opportunities of Mobile Phone-Based Data Collection: Evidence from South Sudan",
+    "year": 2013,
+    "type": "wps",
+    "venue": "World Bank Policy Research Working Paper 6321",
+    "series": [
+      "WPS 6321"
+    ],
+    "coauthors": [
+      "Paul Gubbins",
+      "Alessandro Romeo"
+    ],
+    "url": "https://ideas.repec.org/p/wbk/wbrwps/6321.html",
+    "links": [],
+    "okr_handle": "10986/12169",
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "data"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "okr_match": 1.04,
+    "cover": "assets/covers/south-sudan-mobile-2013.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "mvp-new-transparency-2013",
+    "title": "The New Transparency in Development Economics: Lessons from the Millennium Villages Controversy",
+    "year": 2013,
+    "type": "journal",
+    "venue": "World Economics 14(4)",
+    "series": [
+      "CGD Working Paper 342"
+    ],
+    "coauthors": [
+      "Michael Clemens"
+    ],
+    "url": "https://www.cgdev.org/sites/default/files/Clemens-Demombynes-new-transparency_1.pdf",
+    "links": [
+      {
+        "label": "SSRN",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2366970"
+      }
+    ],
+    "okr_handle": null,
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "evaluation"
+    ],
+    "collections": [
+      "mvp"
+    ],
+    "featured": true,
+    "blurb": "What the controversy taught about transparency, replication, and the incentives of high-profile development projects.",
+    "cover": null
+  },
+  {
+    "id": "kenya-mobile-revolution-2012",
+    "title": "Kenya's Mobile Revolution and the Promise of Mobile Savings",
+    "year": 2012,
+    "type": "wps",
+    "venue": "World Bank Policy Research Working Paper 5988",
+    "series": [
+      "WPS 5988"
+    ],
+    "coauthors": [
+      "Aaron Thegeya"
+    ],
+    "url": "https://openknowledge.worldbank.org/entities/publication/4f176131-ba1a-5b98-8a97-4ef3d1b24c7b",
+    "links": [
+      {
+        "label": "IDEAS",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/5988.html"
+      }
+    ],
+    "okr_handle": "10986/3275",
+    "okr_query": "Kenya's mobile revolution and the promise of mobile savings",
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "finance"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Using a 2010 survey, finds that Kenyans registered for M-PESA are a third more likely to report having savings.",
+    "okr_match": 1.05,
+    "cover": "assets/covers/kenya-mobile-revolution-2012.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "mvp-lancet-2012",
+    "title": "Concerns About the Millennium Villages Project Report",
+    "year": 2012,
+    "type": "comment",
+    "venue": "The Lancet 379(9830)",
+    "series": [],
+    "coauthors": [
+      "Jesse Bump",
+      "Michael Clemens",
+      "Lawrence Haddad"
+    ],
+    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(12)60848-4/fulltext",
+    "links": [
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22633026/"
+      }
+    ],
+    "okr_handle": null,
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "evaluation"
+    ],
+    "collections": [
+      "mvp"
+    ],
+    "featured": false,
+    "blurb": "Three methodological concerns, each undermining one of the MVP's headline claims about child mortality. The Lancet paper was subsequently corrected.",
+    "cover": null
+  },
+  {
+    "id": "mvp-ajcn-2012",
+    "title": "Multisector Intervention to Accelerate Reductions in Child Stunting: An Independent Critique of Scientific Method",
+    "year": 2012,
+    "type": "comment",
+    "venue": "American Journal of Clinical Nutrition 95(3)",
+    "series": [],
+    "coauthors": [
+      "Michael Clemens"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Clemens+Demombynes+multisector+intervention+stunting+independent+critique",
+    "links": [],
+    "okr_handle": null,
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "evaluation",
+      "nutrition"
+    ],
+    "collections": [
+      "mvp"
+    ],
+    "featured": false,
+    "blurb": null,
+    "cover": null
+  },
+  {
+    "id": "mvp-rigorous-ie-2011",
+    "title": "When Does Rigorous Impact Evaluation Make a Difference? The Case of the Millennium Villages",
+    "year": 2011,
+    "type": "journal",
+    "venue": "Journal of Development Effectiveness 3(3)",
+    "series": [
+      "WPS 5477 (2010)",
+      "CGD Working Paper 225 (2010)"
+    ],
+    "coauthors": [
+      "Michael Clemens"
+    ],
+    "url": "https://doi.org/10.1080/19439342.2011.587017",
+    "links": [
+      {
+        "label": "WPS 5477",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/5477.html"
+      },
+      {
+        "label": "CGD WP 225",
+        "url": "https://www.cgdev.org/publication/when-does-rigorous-impact-evaluation-make-difference-case-millennium-villages-working"
+      }
+    ],
+    "okr_handle": "10986/3959",
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "evaluation"
+    ],
+    "collections": [
+      "mvp"
+    ],
+    "featured": true,
+    "blurb": "Comparing trends at MVP sites in Kenya, Ghana, and Nigeria with surrounding areas yields far more modest effects than the project's before-and-after comparisons, and shows why a credible evaluation was feasible from the start.",
+    "figure": "mvp-u5mr",
+    "cover": "assets/covers/mvp-rigorous-ie-2011.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "horn-drought-kenya-2011",
+    "title": "The Drought and Food Crisis in the Horn of Africa: Impacts and Proposed Policy Responses for Kenya",
+    "year": 2011,
+    "type": "report",
+    "venue": "World Bank",
+    "series": [],
+    "coauthors": [
+      "Jane Kiringai"
+    ],
+    "url": "https://ideas.repec.org/p/wbk/wboper/10073.html",
+    "links": [],
+    "okr_handle": "10986/10073",
+    "okr_query": "The Drought and Food Crisis in the Horn of Africa: Impacts and Proposed Policy Responses for Kenya",
+    "countries": [
+      "kenya"
+    ],
+    "topics": [
+      "poverty"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "okr_match": 1.04,
+    "cover": "assets/covers/horn-drought-kenya-2011.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "central-america-crime-2011",
+    "title": "Crime and Violence in Central America: A Development Challenge",
+    "year": 2011,
+    "type": "report",
+    "venue": "World Bank, Latin America and the Caribbean Region",
+    "series": [],
+    "coauthors": [],
+    "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/882501468242386224",
+    "links": [
+      {
+        "label": "Drug trafficking and violence (with Cuevas, 2009)",
+        "url": "https://documents1.worldbank.org/curated/en/761351468235453648/pdf/620310WP0Drug00BOX0361475B00PUBLIC0.pdf"
+      }
+    ],
+    "okr_handle": "10986/2744",
+    "okr_query": "Crime and Violence in Central America: A Development Challenge",
+    "countries": [
+      "latam"
+    ],
+    "topics": [
+      "crime"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "Led the chapters on crime levels and trends, the costs of crime, and drug trafficking for the World Bank's regional study.",
+    "okr_match": 0.95,
+    "cover": "assets/covers/central-america-crime-2011.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "haiti-schools-2010",
+    "title": "Students and the Market for Schools in Haiti",
+    "year": 2010,
+    "type": "wps",
+    "venue": "World Bank Policy Research Working Paper 5503",
+    "series": [
+      "WPS 5503"
+    ],
+    "coauthors": [
+      "Peter Holland",
+      "Gianmarco León"
+    ],
+    "url": "https://ideas.repec.org/p/wbk/wbrwps/5503.html",
+    "links": [],
+    "okr_handle": "10986/3985",
+    "okr_query": "Students and the market for schools in Haiti",
+    "countries": [
+      "latam"
+    ],
+    "topics": [
+      "education"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": "In a country where most schooling is private, how do families choose schools and what do they pay?",
+    "okr_match": 1.05,
+    "cover": "assets/covers/haiti-schools-2010.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "argentina-inequality-2008",
+    "title": "Connecting the Unobserved Dots: A Decomposition Analysis of Changes in Earnings Inequality in Urban Argentina, 1980–2002",
+    "year": 2008,
+    "type": "wps",
+    "venue": "World Bank Policy Research Working Paper 4624",
+    "series": [
+      "WPS 4624"
+    ],
+    "coauthors": [
+      "Johannes Metzler"
+    ],
+    "url": "https://ideas.repec.org/p/wbk/wbrwps/4624.html",
+    "links": [],
+    "okr_handle": "10986/6678",
+    "okr_query": "Connecting the unobserved dots decomposition analysis earnings inequality urban Argentina",
+    "countries": [
+      "latam"
+    ],
+    "topics": [
+      "inequality"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "okr_match": 1.05,
+    "cover": "assets/covers/argentina-inequality-2008.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "how-good-a-map-2008",
+    "title": "How Good a Map? Putting Small Area Estimation to the Test",
+    "year": 2008,
+    "type": "journal",
+    "venue": "Rivista Internazionale di Scienze Sociali 116(4)",
+    "series": [
+      "WPS 4155 (2007)"
+    ],
+    "coauthors": [
+      "Chris Elbers",
+      "Jean O. Lanjouw",
+      "Peter Lanjouw"
+    ],
+    "url": "https://ideas.repec.org/a/vep/journl/y2008v116i4p465-493.html",
+    "links": [
+      {
+        "label": "WPS 4155",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/4155.html"
+      }
+    ],
+    "okr_handle": null,
+    "okr_query": "How good a map? Putting small area estimation to the test",
+    "countries": [],
+    "topics": [
+      "poverty",
+      "data"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": "Tests poverty-mapping estimates against census ground truth in Mexico and Brazil.",
+    "cover": null
+  },
+  {
+    "id": "tanzania-poverty-2007",
+    "title": "Growth, Inequality and Simulated Poverty Paths for Tanzania, 1992–2002",
+    "year": 2007,
+    "type": "journal",
+    "venue": "Journal of African Economies 16(4)",
+    "series": [
+      "WPS 3432 (2004)"
+    ],
+    "coauthors": [
+      "Johannes Hoogeveen"
+    ],
+    "url": "https://ideas.repec.org/a/oup/jafrec/v16y2007i4p596-628.html",
+    "links": [
+      {
+        "label": "WPS 3432",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/3432.html"
+      }
+    ],
+    "okr_handle": "10986/14210",
+    "okr_query": "Growth, inequality, and simulated poverty paths for Tanzania",
+    "countries": [],
+    "topics": [
+      "poverty"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "okr_match": 0.92,
+    "cover": "assets/covers/tanzania-poverty-2007.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "crime-inequality-sa-2005",
+    "title": "Crime and Local Inequality in South Africa",
+    "year": 2005,
+    "type": "journal",
+    "venue": "Journal of Development Economics 76(2)",
+    "series": [
+      "WPS 2925 (2002)"
+    ],
+    "coauthors": [
+      "Berk Özler"
+    ],
+    "url": "https://doi.org/10.1016/j.jdeveco.2003.12.015",
+    "links": [
+      {
+        "label": "WPS 2925",
+        "url": "https://ideas.repec.org/p/wbk/wbrwps/2925.html"
+      }
+    ],
+    "okr_handle": "10986/19208",
+    "okr_query": "Crime and local inequality in South Africa",
+    "countries": [],
+    "topics": [
+      "crime",
+      "inequality"
+    ],
+    "collections": [],
+    "featured": true,
+    "blurb": "His most-cited paper: using police-station data and poverty maps, finds that property crime rises with local inequality and that both burglary and violent crime are higher where the neighbors are richer.",
+    "okr_match": 1.0,
+    "cover": "assets/covers/crime-inequality-sa-2005.jpg",
+    "cover_source": "okr"
+  },
+  {
+    "id": "geographic-profile-poverty-2003",
+    "title": "Producing a Better Geographic Profile of Poverty: Methodology and Evidence from Three Developing Countries",
+    "year": 2003,
+    "type": "chapter",
+    "venue": "In van der Hoeven and Shorrocks (eds.), Growth, Inequality and Poverty: Prospects for Pro-poor Economic Development, Oxford University Press",
+    "series": [
+      "WIDER Discussion Paper 2002/39"
+    ],
+    "coauthors": [
+      "Chris Elbers",
+      "Jean O. Lanjouw",
+      "Peter Lanjouw",
+      "Johan Mistiaen",
+      "Berk Özler"
+    ],
+    "url": "https://ideas.repec.org/p/unu/wpaper/dp2002-39.html",
+    "links": [],
+    "okr_handle": null,
+    "countries": [],
+    "topics": [
+      "poverty",
+      "data"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": null,
+    "cover": null
+  },
+  {
+    "id": "how-low-can-you-go-2002",
+    "title": "How Low Can You Go? Combining Census and Survey Data for Mapping Poverty in South Africa",
+    "year": 2002,
+    "type": "journal",
+    "venue": "Journal of African Economies 11(2)",
+    "series": [],
+    "coauthors": [
+      "Harold Alderman",
+      "Miriam Babita",
+      "Nthabiseng Makhatha",
+      "Berk Özler"
+    ],
+    "url": "https://ideas.repec.org/a/oup/jafrec/v11y2002i2p169-200.html",
+    "links": [],
+    "okr_handle": null,
+    "countries": [],
+    "topics": [
+      "poverty",
+      "data"
+    ],
+    "collections": [],
+    "featured": false,
+    "blurb": "An early poverty map for South Africa, combining census and survey data down to small areas.",
+    "cover": null
+  }
+]
