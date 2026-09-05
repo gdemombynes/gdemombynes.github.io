@@ -290,36 +290,6 @@
     "cover_source": "okr"
   },
   {
-    "id": "philippines-socioemotional-2017",
-    "title": "Developing Socioemotional Skills for the Philippines' Labor Market",
-    "year": 2017,
-    "type": "book",
-    "venue": "World Bank, Directions in Development",
-    "series": [],
-    "coauthors": [],
-    "url": "https://hdl.handle.net/10986/28381",
-    "links": [
-      {
-        "label": "ADB Development Asia summary",
-        "url": "https://development.asia/summary/developing-social-and-emotional-skills-critical-workplace"
-      }
-    ],
-    "okr_handle": "10986/28381",
-    "okr_query": "Developing Socioemotional Skills for the Philippines' Labor Market",
-    "countries": [
-      "philippines"
-    ],
-    "topics": [
-      "skills"
-    ],
-    "collections": [],
-    "featured": false,
-    "blurb": "Filipinos with stronger socioemotional skills are more likely to finish secondary school, find work, and earn more.",
-    "okr_match": 1.05,
-    "cover": "assets/covers/philippines-socioemotional-2017.jpg",
-    "cover_source": "okr"
-  },
-  {
     "id": "vietnam-ho-khau-2016",
     "title": "Vietnam's Household Registration System",
     "year": 2016,

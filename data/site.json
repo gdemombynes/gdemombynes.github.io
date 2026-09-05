@@ -3,7 +3,7 @@
   "short_name": "Gabriel Demombynes",
   "headline": "Economist. Manager of the Human Capital Project at the World Bank.",
   "tagline": "Scholar of AI and human capital",
-  "profile": "Development economist and engineer leading digital and AI evaluation and implementation at the Human Capital Project. Twenty years across Africa, East Asia, and Latin America, combining operational delivery, policy dialogue, and rigorous evaluation to translate innovation into measurable outcomes in education, health, social protection, and jobs.",
+  "profile": "Development economist and engineer leading the Human Capital Project. Twenty years across Africa, East Asia, and Latin America, combining operational delivery, policy dialogue, and rigorous evaluation to translate innovation into measurable outcomes in education, health, social protection, and jobs.",
   "bio": [
     "Gabriel has been based in Bogotá, Manila, Hanoi, and Nairobi, and led the World Bank's Systematic Country Diagnostics for Colombia, the Philippines, and Vietnam as well as the Philippines COVID-19 Emergency Response Health Project. His analytical work spans nutrition in the Philippines, child survival in Kenya, learning poverty in Colombia, global COVID-19 mortality patterns, Vietnam's household registration system, the Millennium Villages Project, crime and violence in Central America and the Caribbean, and mobile-phone surveys in South Sudan.",
     "He is best known for arguing for the greater use of the scientific method in evaluating international development programs. His work has appeared in academic journals and has been cited in the Financial Times, the Washington Post, and The Economist. He has taught economic development at the Johns Hopkins School of Advanced International Studies and was Economic Policy Advisor to Howard Dean during the 2003–04 U.S. presidential campaign."
@@ -15,13 +15,36 @@
     "scope": "Leadership for global dialogue, data, and diagnostics for solutions and impact. Accountable for the World Bank's global Human Capital Project platform spanning 96 countries, including ministerial engagement, data systems, global knowledge delivery, and oversight of a $26 million Umbrella Trust Fund."
   },
   "education": [
-    {"degree": "Ph.D. in Economics", "inst": "University of California, Berkeley", "year": 2003},
-    {"degree": "B.A., Plan II Liberal Arts Honors Program", "inst": "University of Texas at Austin", "year": 1995},
-    {"degree": "B.S. in Civil and Environmental Engineering", "inst": "University of Texas at Austin", "year": 1994}
+    {
+      "degree": "Ph.D. in Economics",
+      "inst": "University of California, Berkeley",
+      "year": 2003
+    },
+    {
+      "degree": "B.A., Plan II Liberal Arts Honors Program",
+      "inst": "University of Texas at Austin",
+      "year": 1995
+    },
+    {
+      "degree": "B.S. in Civil and Environmental Engineering",
+      "inst": "University of Texas at Austin",
+      "year": 1994
+    }
   ],
-  "languages": ["English", "Spanish", "French"],
-  "citizenship": ["United States", "France"],
-  "metrics": {"citations": 2700, "h_index": 23, "as_of": "September 2026"},
+  "languages": [
+    "English",
+    "Spanish",
+    "French"
+  ],
+  "citizenship": [
+    "United States",
+    "France"
+  ],
+  "metrics": {
+    "citations": 2700,
+    "h_index": 23,
+    "as_of": "September 2026"
+  },
   "links": {
     "scholar": "https://scholar.google.com/citations?user=v-Shw9cAAAAJ&hl=en",
     "ideas": "https://ideas.repec.org/f/pde505.html",
@@ -33,73 +56,303 @@
   },
   "photo": null,
   "experience": [
-    {"id": "hcp", "role": "Manager, Human Capital Project", "org": "World Bank", "city": "Washington, DC", "start": 2023, "end": null, "place": "dc",
-     "bullets": ["Leads global dialogue, data, and diagnostics for the Human Capital Project across 96 countries.", "Oversees the $26 million Human Capital Umbrella Trust Fund and the digital and AI agenda for people."]},
-    {"id": "bogota", "role": "Practice Leader for Human Development", "org": "World Bank", "city": "Bogotá", "start": 2020, "end": 2023, "place": "colombia",
-     "bullets": ["Led the human development team for Colombia and Venezuela.", "Directed the Colombia Human Capital Review, the Colombia Systematic Country Diagnostic, and a Development Policy Operation.", "Coordinated across IBRD and IFC on the vaccine production agenda."]},
-    {"id": "manila", "role": "Program Leader for Human Development", "org": "World Bank", "city": "Manila", "start": 2016, "end": 2020, "place": "philippines",
-     "bullets": ["Led the team covering Brunei, Malaysia, the Philippines, and Thailand.", "Led the $100 million Philippines COVID-19 Emergency Response Health Project.", "Guided the team on the Philippines National ID initiative."]},
-    {"id": "hanoi", "role": "Senior Economist, Poverty and Equity", "org": "World Bank", "city": "Hanoi", "start": 2013, "end": 2016, "place": "vietnam",
-     "bullets": ["Led the data and statistics program in Vietnam.", "Led the Vietnam Household Registration System study, the Vietnam 2035 study, and the Vietnam Systematic Country Diagnostic."]},
-    {"id": "nairobi", "role": "Senior Economist, Poverty Reduction and Economic Management", "org": "World Bank", "city": "Nairobi", "start": 2009, "end": 2013, "place": "kenya",
-     "bullets": ["Led data and statistics operations in Kenya.", "Developed innovative phone surveys in South Sudan.", "Authored evaluation studies cited in The Economist."]},
-    {"id": "sais", "role": "Visiting Professor", "org": "Johns Hopkins School of Advanced International Studies", "city": "Washington, DC", "start": 2008, "end": 2008, "place": "dc",
-     "bullets": ["Taught economic development to master's degree students."]},
-    {"id": "lac", "role": "Economist, Latin America and the Caribbean Poverty Group", "org": "World Bank", "city": "Washington, DC", "start": 2005, "end": 2009, "place": "latam",
-     "bullets": ["Led data and statistics programs in multiple countries.", "Authored analysis of the private sector's role in education in Haiti."]},
-    {"id": "dean", "role": "Economic Policy Advisor", "org": "Howard Dean presidential campaign", "city": "Burlington, VT", "start": 2003, "end": 2004, "place": null,
-     "bullets": ["Principal advisor to a U.S. presidential candidate; managed economic policy development and coordinated external advisors.", "Drafted policy statements, briefing materials, policy speeches, and press releases."]},
-    {"id": "eng", "role": "Engineering consultant and intern", "org": "IBM; Institute for Advanced Technology; U.S. Department of Energy", "city": "Austin, TX and Rocky Flats, CO", "start": 1992, "end": 1996, "place": null,
-     "bullets": ["Positions with IBM and the Institute for Advanced Technology in Austin, Texas, and the U.S. Department of Energy at Rocky Flats, Colorado."]}
+    {
+      "id": "hcp",
+      "role": "Manager, Human Capital Project",
+      "org": "World Bank",
+      "city": "Washington, DC",
+      "start": 2023,
+      "end": null,
+      "place": "dc",
+      "bullets": [
+        "Leads global dialogue, data, and diagnostics for the Human Capital Project across 96 countries.",
+        "Oversees the $26 million Human Capital Umbrella Trust Fund and the digital and AI agenda for people."
+      ]
+    },
+    {
+      "id": "bogota",
+      "role": "Practice Leader for Human Development",
+      "org": "World Bank",
+      "city": "Bogotá",
+      "start": 2020,
+      "end": 2023,
+      "place": "colombia",
+      "bullets": [
+        "Led the human development team for Colombia and Venezuela.",
+        "Directed the Colombia Human Capital Review, the Colombia Systematic Country Diagnostic, and a Development Policy Operation.",
+        "Coordinated across IBRD and IFC on the vaccine production agenda."
+      ]
+    },
+    {
+      "id": "manila",
+      "role": "Program Leader for Human Development",
+      "org": "World Bank",
+      "city": "Manila",
+      "start": 2016,
+      "end": 2020,
+      "place": "philippines",
+      "bullets": [
+        "Led the team covering Brunei, Malaysia, the Philippines, and Thailand.",
+        "Led the $100 million Philippines COVID-19 Emergency Response Health Project.",
+        "Guided the team on the Philippines National ID initiative."
+      ]
+    },
+    {
+      "id": "hanoi",
+      "role": "Senior Economist, Poverty and Equity",
+      "org": "World Bank",
+      "city": "Hanoi",
+      "start": 2013,
+      "end": 2016,
+      "place": "vietnam",
+      "bullets": [
+        "Led the data and statistics program in Vietnam.",
+        "Led the Vietnam Household Registration System study, the Vietnam 2035 study, and the Vietnam Systematic Country Diagnostic."
+      ]
+    },
+    {
+      "id": "nairobi",
+      "role": "Senior Economist, Poverty Reduction and Economic Management",
+      "org": "World Bank",
+      "city": "Nairobi",
+      "start": 2009,
+      "end": 2013,
+      "place": "kenya",
+      "bullets": [
+        "Led data and statistics operations in Kenya.",
+        "Developed innovative phone surveys in South Sudan.",
+        "Authored evaluation studies cited in The Economist."
+      ]
+    },
+    {
+      "id": "sais",
+      "role": "Visiting Professor",
+      "org": "Johns Hopkins School of Advanced International Studies",
+      "city": "Washington, DC",
+      "start": 2008,
+      "end": 2008,
+      "place": "dc",
+      "bullets": [
+        "Taught economic development to master's degree students."
+      ]
+    },
+    {
+      "id": "lac",
+      "role": "Economist, Latin America and the Caribbean Poverty Group",
+      "org": "World Bank",
+      "city": "Washington, DC",
+      "start": 2005,
+      "end": 2009,
+      "place": "latam",
+      "bullets": [
+        "Led data and statistics programs in multiple countries.",
+        "Authored analysis of the private sector's role in education in Haiti."
+      ]
+    },
+    {
+      "id": "dean",
+      "role": "Economic Policy Advisor",
+      "org": "Howard Dean presidential campaign",
+      "city": "Burlington, VT",
+      "start": 2003,
+      "end": 2004,
+      "place": null,
+      "bullets": [
+        "Principal advisor to a U.S. presidential candidate; managed economic policy development and coordinated external advisors.",
+        "Drafted policy statements, briefing materials, policy speeches, and press releases."
+      ]
+    },
+    {
+      "id": "eng",
+      "role": "Engineering consultant and intern",
+      "org": "IBM; Institute for Advanced Technology; U.S. Department of Energy",
+      "city": "Austin, TX and Rocky Flats, CO",
+      "start": 1992,
+      "end": 1996,
+      "place": null,
+      "bullets": [
+        "Positions with IBM and the Institute for Advanced Technology in Austin, Texas, and the U.S. Department of Energy at Rocky Flats, Colorado."
+      ]
+    }
   ],
   "leadership": [
-    {"year": "2024", "text": "Conceived and delivered the Human Capital Conclave with finance ministers from over 30 countries and leading CEOs on Realizing the Potential of Digital Technology and AI."},
-    {"year": "2024", "text": "Designed and launched competitive grants to World Bank Group country teams for AI implementation and evaluation in health, education, social protection, and skills for jobs in 18 countries."},
-    {"year": "2024–", "text": "Designed the Digital and AI for People Knowledge Series of seminars jointly with the Digital Vice Presidency."},
-    {"year": "2025", "text": "Published the policy research report From Promise to Productivity: Making Digital Work for People and Jobs."},
-    {"year": "2025", "text": "Led and organized the inaugural World Bank–George Washington University Knowledge Symposium on AI and the Future of Human Capital in the Global South."},
-    {"year": "2025", "text": "Formed the Community of Practice for Digital and AI Solutions for People."},
-    {"year": "2025", "text": "Developed the People session at the Global Digital Summit and the DRIVE AI training session for People staff, jointly with the Digital Vice Presidency."},
-    {"year": "2023–", "text": "Created the biweekly AI & Human Capital Bits bulletin for World Bank staff; 30 editions are archived online."}
+    {
+      "year": "2024",
+      "text": "Conceived and delivered the Human Capital Conclave with finance ministers from over 30 countries and leading CEOs on Realizing the Potential of Digital Technology and AI."
+    },
+    {
+      "year": "2024",
+      "text": "Designed and launched competitive grants to World Bank Group country teams for AI implementation and evaluation in health, education, social protection, and skills for jobs in 18 countries."
+    },
+    {
+      "year": "2024–",
+      "text": "Designed the Digital and AI for People Knowledge Series of seminars jointly with the Digital Vice Presidency."
+    },
+    {
+      "year": "2025",
+      "text": "Led and organized the inaugural World Bank–George Washington University Knowledge Symposium on AI and the Future of Human Capital in the Global South."
+    },
+    {
+      "year": "2025",
+      "text": "Developed the People session at the Global Digital Summit and the DRIVE AI training session for People staff, jointly with the Digital Vice Presidency."
+    },
+    {
+      "year": "2023–",
+      "text": "Created the biweekly AI & Human Capital Bits bulletin for World Bank staff; 30 editions are archived online."
+    }
   ],
   "speaking": [
-    {"year": "2025", "text": "Invited member, Center for Global Development Working Group on AI Evaluation."},
-    {"year": "2025", "text": "Interviewed by The Economist on AI and development."},
-    {"year": "2025", "text": "Panelist, Evaluating AI: What's New and Why the Development Sector Should Care, Center for Global Development (14 October 2025).", "url": "https://www.cgdev.org/event/evaluating-ai-whats-new-and-why-development-sector-should-care"},
-    {"year": "2024–25", "text": "Featured speaker on AI and development at the Center for Global Development and the Carnegie Endowment for International Peace."}
+    {
+      "year": "2025",
+      "text": "Invited member, Center for Global Development Working Group on AI Evaluation."
+    },
+    {
+      "year": "2025",
+      "text": "Interviewed by The Economist on AI and development."
+    },
+    {
+      "year": "2025",
+      "text": "Panelist, Evaluating AI: What's New and Why the Development Sector Should Care, Center for Global Development (14 October 2025).",
+      "url": "https://www.cgdev.org/event/evaluating-ai-whats-new-and-why-development-sector-should-care"
+    },
+    {
+      "year": "2024–25",
+      "text": "Featured speaker on AI and development at the Center for Global Development and the Carnegie Endowment for International Peace."
+    }
   ],
   "places": [
-    {"id": "colombia", "n": "01", "label": "Colombia", "city": "Bogotá", "lat": 4.71, "lon": -74.07, "years": "2020–2023", "role": "Practice Leader for Human Development",
-     "blurb": "Three years in Bogotá leading the World Bank's human development team for Colombia and Venezuela through the pandemic: a national seroprevalence program, a data dashboard for safe reopening, the vaccine production agenda, the 2022 Systematic Country Diagnostic update, and a new measure of learning poverty at the level of every municipality.",
-     "figure": null},
-    {"id": "philippines", "n": "02", "label": "Philippines", "city": "Manila", "lat": 14.60, "lon": 120.98, "years": "2016–2020", "role": "Program Leader for Human Development, Brunei, Malaysia, Philippines, and Thailand",
-     "blurb": "Four years in Manila. The work centered on why nearly one Filipino child in three is stunted, on socioemotional skills for the labor market, on the national ID system, on the 2019 Systematic Country Diagnostic, and, in 2020, on leading the $100 million COVID-19 Emergency Response Health Project.",
-     "figure": null},
-    {"id": "vietnam", "n": "03", "label": "Vietnam", "city": "Hanoi", "lat": 21.03, "lon": 105.85, "years": "2013–2016", "role": "Senior Economist, Poverty and Equity",
-     "blurb": "Three years in Hanoi leading the data and statistics program. The centerpiece was the first systematic study of hộ khẩu, Vietnam's household registration system, and its effect on migrants' access to public services, alongside the human development pillar of the Vietnam 2035 report and a survey of quality in district and commune health facilities.",
-     "figure": null},
-    {"id": "kenya", "n": "04", "label": "Kenya", "city": "Nairobi", "lat": -1.29, "lon": 36.82, "years": "2009–2013", "role": "Senior Economist, Poverty Reduction and Economic Management",
-     "blurb": "Four years in Nairobi. Research on what drove Kenya's remarkably fast decline in infant mortality, on M-PESA and mobile savings, on the 2011 drought, and on jobs; pioneering high-frequency phone surveys across the border in South Sudan; and, from Nairobi, the evaluation of the Millennium Villages Project.",
-     "figure": "kenya-imr"},
-    {"id": "latam", "n": "05", "label": "Latin America", "city": null, "lat": 10.0, "lon": -75.0, "years": "2005–2009 and after", "role": "Economist, Latin America and the Caribbean Poverty Group", "regional": true,
-     "blurb": "Before Nairobi, four years on the World Bank's Latin America poverty team working on data and statistics across the region: the crime and violence study for Central America, the market for private schools in Haiti, and earnings inequality in Argentina. Later, from Bogotá, comparative work on COVID-19 mortality across countries.",
-     "figure": "covid-under65"},
-    {"id": "dc", "n": "", "label": "Washington, DC", "city": "Washington", "lat": 38.9, "lon": -77.04, "years": "2023–", "role": "Manager, Human Capital Project", "nav": false, "current": true}
+    {
+      "id": "colombia",
+      "n": "01",
+      "label": "Colombia",
+      "city": "Bogotá",
+      "lat": 4.71,
+      "lon": -74.07,
+      "years": "2020–2023",
+      "role": "Practice Leader for Human Development",
+      "blurb": "Three years in Bogotá leading the World Bank's human development team for Colombia and Venezuela through the pandemic: a national seroprevalence program, a data dashboard for safe reopening, the vaccine production agenda, the 2022 Systematic Country Diagnostic update, and a new measure of learning poverty at the level of every municipality.",
+      "figure": null
+    },
+    {
+      "id": "philippines",
+      "n": "02",
+      "label": "Philippines",
+      "city": "Manila",
+      "lat": 14.6,
+      "lon": 120.98,
+      "years": "2016–2020",
+      "role": "Program Leader for Human Development, Brunei, Malaysia, Philippines, and Thailand",
+      "blurb": "Four years in Manila. The work centered on why nearly one Filipino child in three is stunted, on the national ID system, on the 2019 Systematic Country Diagnostic, and, in 2020, on leading the $100 million COVID-19 Emergency Response Health Project.",
+      "figure": null
+    },
+    {
+      "id": "vietnam",
+      "n": "03",
+      "label": "Vietnam",
+      "city": "Hanoi",
+      "lat": 21.03,
+      "lon": 105.85,
+      "years": "2013–2016",
+      "role": "Senior Economist, Poverty and Equity",
+      "blurb": "Three years in Hanoi leading the data and statistics program. The centerpiece was the first systematic study of hộ khẩu, Vietnam's household registration system, and its effect on migrants' access to public services, alongside the human development pillar of the Vietnam 2035 report and a survey of quality in district and commune health facilities.",
+      "figure": null
+    },
+    {
+      "id": "kenya",
+      "n": "04",
+      "label": "Kenya",
+      "city": "Nairobi",
+      "lat": -1.29,
+      "lon": 36.82,
+      "years": "2009–2013",
+      "role": "Senior Economist, Poverty Reduction and Economic Management",
+      "blurb": "Four years in Nairobi. Research on what drove Kenya's remarkably fast decline in infant mortality, on M-PESA and mobile savings, on the 2011 drought, and on jobs; pioneering high-frequency phone surveys across the border in South Sudan; and, from Nairobi, the evaluation of the Millennium Villages Project.",
+      "figure": "kenya-imr"
+    },
+    {
+      "id": "latam",
+      "n": "05",
+      "label": "Latin America",
+      "city": null,
+      "lat": 10.0,
+      "lon": -75.0,
+      "years": "2005–2009 and after",
+      "role": "Economist, Latin America and the Caribbean Poverty Group",
+      "regional": true,
+      "blurb": "Before Nairobi, four years on the World Bank's Latin America poverty team working on data and statistics across the region: the crime and violence study for Central America, the market for private schools in Haiti, and earnings inequality in Argentina. Later, from Bogotá, comparative work on COVID-19 mortality across countries.",
+      "figure": "covid-under65"
+    },
+    {
+      "id": "dc",
+      "n": "",
+      "label": "Washington, DC",
+      "city": "Washington",
+      "lat": 38.9,
+      "lon": -77.04,
+      "years": "2023–",
+      "role": "Manager, Human Capital Project",
+      "nav": false,
+      "current": true
+    }
   ],
   "mvp": {
     "intro": "In 2010, Gabriel and Michael Clemens of the Center for Global Development asked a simple question about the Millennium Villages Project, the high-profile package intervention led by Jeffrey Sachs: how would anyone know whether it worked? Comparing trends at the project sites in Kenya, Ghana, and Nigeria with trends in the surrounding regions, they found that the project's before-and-after comparisons attributed to the intervention improvements that were happening everywhere. The exchange that followed, in blogs, seminars, The Guardian, and The Lancet, became a case study in transparency and the scientific method in development.",
     "timeline": [
-      {"date": "Oct 2010", "text": "\"When Does Rigorous Impact Evaluation Make a Difference?\" released as CGD Working Paper 225 and World Bank WPS 5477; first Africa Can post, \"Evaluating the Millennium Villages.\"", "url": "https://blogs.worldbank.org/en/africacan/evaluating-the-millennium-villages"},
-      {"date": "Oct 2010", "text": "Reply to the MVP's response and a seminar with comments from Jeff Sachs.", "url": "https://blogs.worldbank.org/en/africacan/evaluating-the-millennium-villages-reply-to-the-mvp-upcoming-seminar-with-comments-from-jeff-sachs"},
-      {"date": "Jan 2011", "text": "Shanta Devarajan, World Bank Africa chief economist, calls the paper \"the first evaluation of the MVP.\"", "url": "https://blogs.worldbank.org/en/africacan/evaluating-millennium-villages-revisited"},
-      {"date": "Feb 2011", "text": "\"Millennium Villages Project continues to systematically overstate its effects.\"", "url": "https://blogs.worldbank.org/en/africacan/the-millennium-villages-project-continues-to-systematically-overstate-its-effects"},
-      {"date": "Mar–Jun 2011", "text": "The Oxford Millennium Villages debate.", "url": "https://blogs.worldbank.org/en/africacan/the-oxford-millennium-villages-debate"},
-      {"date": "Oct 2011", "text": "\"Millennium Villages Project needs proper evaluation,\" The Guardian, Poverty Matters. Sachs replies in the same forum.", "url": "https://www.theguardian.com/global-development/poverty-matters/2011/oct/19/millennium-villages-project-proper-evaluation"},
-      {"date": "Nov 2011", "text": "Peer-reviewed version published in the Journal of Development Effectiveness.", "url": "https://doi.org/10.1080/19439342.2011.587017"},
-      {"date": "May 2012", "text": "Letter in The Lancet with Jesse Bump and Lawrence Haddad; the MVP corrects its Lancet paper and its lead author departs. A companion post shows under-five mortality fell more slowly at MVP sites than nationally.", "url": "https://blogs.worldbank.org/en/impactevaluations/the-millennium-villages-project-impacts-on-child-mortality"},
-      {"date": "2012", "text": "Independent critique of the MVP's stunting claims in the American Journal of Clinical Nutrition.", "url": null},
-      {"date": "Sep 2013", "text": "\"The New Transparency in Development Economics: Lessons from the Millennium Villages Controversy,\" CGD Working Paper 342 and World Economics.", "url": "https://www.cgdev.org/sites/default/files/Clemens-Demombynes-new-transparency_1.pdf"},
-      {"date": "2018–2022", "text": "The MVP's own retrospective endline evaluation appears in The Lancet Global Health, and a 2021 paper by Mitchell, Gelman, and Sachs sets out to reconcile the competing evaluations.", "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(18)30196-7/fulltext"}
+      {
+        "date": "Oct 2010",
+        "text": "\"When Does Rigorous Impact Evaluation Make a Difference?\" released as CGD Working Paper 225 and World Bank WPS 5477; first Africa Can post, \"Evaluating the Millennium Villages.\"",
+        "url": "https://blogs.worldbank.org/en/africacan/evaluating-the-millennium-villages"
+      },
+      {
+        "date": "Oct 2010",
+        "text": "Reply to the MVP's response and a seminar with comments from Jeff Sachs.",
+        "url": "https://blogs.worldbank.org/en/africacan/evaluating-the-millennium-villages-reply-to-the-mvp-upcoming-seminar-with-comments-from-jeff-sachs"
+      },
+      {
+        "date": "Jan 2011",
+        "text": "Shanta Devarajan, World Bank Africa chief economist, calls the paper \"the first evaluation of the MVP.\"",
+        "url": "https://blogs.worldbank.org/en/africacan/evaluating-millennium-villages-revisited"
+      },
+      {
+        "date": "Feb 2011",
+        "text": "\"Millennium Villages Project continues to systematically overstate its effects.\"",
+        "url": "https://blogs.worldbank.org/en/africacan/the-millennium-villages-project-continues-to-systematically-overstate-its-effects"
+      },
+      {
+        "date": "Mar–Jun 2011",
+        "text": "The Oxford Millennium Villages debate.",
+        "url": "https://blogs.worldbank.org/en/africacan/the-oxford-millennium-villages-debate"
+      },
+      {
+        "date": "Oct 2011",
+        "text": "\"Millennium Villages Project needs proper evaluation,\" The Guardian, Poverty Matters. Sachs replies in the same forum.",
+        "url": "https://www.theguardian.com/global-development/poverty-matters/2011/oct/19/millennium-villages-project-proper-evaluation"
+      },
+      {
+        "date": "Nov 2011",
+        "text": "Peer-reviewed version published in the Journal of Development Effectiveness.",
+        "url": "https://doi.org/10.1080/19439342.2011.587017"
+      },
+      {
+        "date": "May 2012",
+        "text": "Letter in The Lancet with Jesse Bump and Lawrence Haddad; the MVP corrects its Lancet paper and its lead author departs. A companion post shows under-five mortality fell more slowly at MVP sites than nationally.",
+        "url": "https://blogs.worldbank.org/en/impactevaluations/the-millennium-villages-project-impacts-on-child-mortality"
+      },
+      {
+        "date": "2012",
+        "text": "Independent critique of the MVP's stunting claims in the American Journal of Clinical Nutrition.",
+        "url": null
+      },
+      {
+        "date": "Sep 2013",
+        "text": "\"The New Transparency in Development Economics: Lessons from the Millennium Villages Controversy,\" CGD Working Paper 342 and World Economics.",
+        "url": "https://www.cgdev.org/sites/default/files/Clemens-Demombynes-new-transparency_1.pdf"
+      },
+      {
+        "date": "2018–2022",
+        "text": "The MVP's own retrospective endline evaluation appears in The Lancet Global Health, and a 2021 paper by Mitchell, Gelman, and Sachs sets out to reconcile the competing evaluations.",
+        "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(18)30196-7/fulltext"
+      }
     ]
   },
   "updated": "2026-09-05"
