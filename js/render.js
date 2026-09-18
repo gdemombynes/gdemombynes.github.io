@@ -136,7 +136,7 @@
     }
     root.appendChild(h("p", { class: "lead", text: "Since 2023 Gabriel's research and leadership have centered on a single question: what will artificial intelligence mean for people in low- and middle-income countries, for how they learn, stay healthy, and earn a living? The answer so far is more measured than either the boosters or the doomsayers suggest. Exposure to AI rises with education and income, so the first wave of disruption will land in richer countries; in poorer ones, electricity and connectivity remain the binding constraints, while the evidence on AI in classrooms is a warning that tools which substitute for effort can undermine learning." }));
     const featured = S.papers.find(p => p.id === "ai-exposure-2025");
-    root.appendChild(FIG.figure("ai-exposure", S.figures, 1));
+    root.appendChild(h("div", { class: "fig-row" }, [FIG.figure("ai-exposure", S.figures, 1), FIG.figure("ai-electricity", S.figures, 2)]));
     if (featured) root.appendChild(h("div", { class: "feat-card reveal" }, [
       coverEl(featured, 96),
       h("div", {}, [
@@ -177,7 +177,7 @@
   function mediaList(items) {
     const mic = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="5.5" y="1.5" width="5" height="8" rx="2.5"/><path d="M3 7.5a5 5 0 0 0 10 0M8 12.5v2M5.5 14.5h5"/></svg>';
     return h("ul", { class: "media" }, items.map(m => h("li", {}, [
-      h("span", { class: "glyph", html: mic }),
+      m.kind === "podcast" ? h("img", { class: "art", src: "assets/media/hello-future.jpg", alt: "Hello Future podcast artwork", width: 72, height: 72, loading: "lazy" }) : h("span", { class: "glyph", html: mic }),
       h("div", {}, [
         m.url ? h("a", Object.assign({ class: "t", href: m.url }, ext), m.title) : h("span", { class: "t", text: m.title }),
         h("div", { class: "mm", text: [m.outlet, fmtDate(m.date), m.duration].filter(Boolean).join(" · ") }),
@@ -209,7 +209,7 @@
     const nav = S.site.places.filter(p => p.nav !== false);
     root.appendChild(h("ul", { class: "place-index" }, nav.map(p => h("li", {}, [h("a", { href: "#" + p.id }, [h("span", { class: "n", text: p.n }), p.label])]))));
     const host = $("#country-sections");
-    let figN = 2;
+    let figN = 3;
     nav.forEach(p => {
       const papers = S.papers.filter(x => x.countries.includes(p.id)).sort(byYearDesc);
       const posts = S.posts.filter(x => x.countries.includes(p.id) && !x.collections.includes("mvp")).sort(byDateDesc);
@@ -220,9 +220,16 @@
         h("span", { class: "coord", text: p.regional ? "Regional" : coord(p.lat, p.lon) }),
         h("span", { text: p.years })
       ]));
-      sec.appendChild(h("h2", { id: p.id + "-h", class: "sec-h2", text: p.city ? `${p.label} · ${p.city}` : p.label }));
-      sec.appendChild(h("div", { class: "role-line", text: p.role }));
-      sec.appendChild(h("p", { class: "lead", text: p.blurb }));
+      const head = h("div", { class: "chead" }, [
+        h("div", {}, [
+          h("h2", { id: p.id + "-h", class: "sec-h2", text: p.city ? `${p.label} · ${p.city}` : p.label }),
+          h("div", { class: "role-line", text: p.role }),
+          h("p", { class: "lead", text: p.blurb })
+        ]),
+        h("div", { class: "locator-wrap" })
+      ]);
+      sec.appendChild(head);
+      FIG.locator(p).then(svg => head.querySelector(".locator-wrap").appendChild(svg));
       if (p.highlight) sec.appendChild(highlightCard(p.highlight));
       if (p.figure && S.figures[p.figure]) sec.appendChild(FIG.figure(p.figure, S.figures, figN++));
       if (papers.length) {
@@ -341,6 +348,11 @@
   }
 
   window.renderAll = async function (S) {
+    ["#about", "#country-sections", "#foot"].forEach(sel => { const e = $(sel); if (e) e.innerHTML = ""; });
+    ["#ai", "#places", "#mvp", "#papers", "#writing"].forEach(sel => {
+      const e = $(sel); if (!e) return;
+      Array.from(e.children).forEach(ch => { if (!ch.classList.contains("runhead") && ch.tagName !== "H2" && !(ch.tagName === "P" && ch.classList.contains("lead") && sel === "#places")) ch.remove(); });
+    });
     renderHero(S);
     renderAI(S);
     const figN = await renderPlaces(S);

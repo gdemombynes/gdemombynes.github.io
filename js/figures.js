@@ -36,11 +36,12 @@
   function lineChart(f) {
     const pts = f.series[0].points, W = 640, H = 320, L = 56, R = 30, T = 24, B = 44;
     const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
-    const x0 = Math.min(...xs), x1 = Math.max(...xs), ymax = Math.ceil(Math.max(...ys) * 1.15 / 20) * 20;
+    const x0 = Math.min(...xs), x1 = Math.max(...xs), ymax = f.ymax || Math.ceil(Math.max(...ys) * 1.15 / 20) * 20;
     const X = x => L + (x - x0) / (x1 - x0) * (W - L - R);
     const Y = y => T + (1 - y / ymax) * (H - T - B);
     const s = svgRoot(W, H, f.title, f.note || f.unit);
-    for (let g = 0; g <= ymax; g += 20) {
+    const step = ymax <= 40 ? 10 : 20;
+    for (let g = 0; g <= ymax; g += step) {
       s.appendChild(el("line", { x1: L, y1: Y(g), x2: W - R, y2: Y(g), class: g === 0 ? "axis" : "grid" }));
       s.appendChild(el("text", { x: L - 8, y: Y(g) + 4, "text-anchor": "end", class: "val lab" }, g));
     }
@@ -126,12 +127,47 @@
   const W = 1000, H = 500;
   const proj = (lon, lat) => [(lon + 180) / 360 * W, (90 - lat) / 180 * H];
 
-  async function placesMap(places) {
-    let land = "";
+  let LAND = null;
+  async function landPath() {
+    if (LAND !== null) return LAND;
+    LAND = "";
     try {
       const r = await fetch("assets/map/world.svg");
-      if (r.ok) { const m = (await r.text()).match(/d="([^"]+)"/); land = m ? m[1] : ""; }
+      if (r.ok) { const m = (await r.text()).match(/d="([^"]+)"/); LAND = m ? m[1] : ""; }
     } catch (e) {}
+    return LAND;
+  }
+  function landUse() {
+    if (!LAND) return null;
+    if (!document.getElementById("worldland")) {
+      const defs = el("svg", { id: "land-defs", width: 0, height: 0, "aria-hidden": "true", style: "position:absolute;width:0;height:0" });
+      const d = el("defs", {}); d.appendChild(el("path", { id: "worldland", d: LAND, "fill-rule": "evenodd" })); defs.appendChild(d);
+      document.body.appendChild(defs);
+    }
+    return el("use", { href: "#worldland", class: "land" });
+  }
+  // Chronological route between postings: [place id, year of arrival]
+  const ROUTE = [["dc", 2005], ["kenya", 2009], ["vietnam", 2013], ["philippines", 2016], ["colombia", 2020], ["dc", 2023]];
+  function arc(a, b, bulge) {
+    const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2, dx = b[0] - a[0], dy = b[1] - a[1];
+    const len = Math.hypot(dx, dy) || 1, nx = -dy / len, ny = dx / len;
+    const cx = mx + nx * len * bulge, cy = my + ny * len * bulge;
+    return { d: `M${a[0].toFixed(1)} ${a[1].toFixed(1)} Q${cx.toFixed(1)} ${cy.toFixed(1)} ${b[0].toFixed(1)} ${b[1].toFixed(1)}`, mid: [0.25 * a[0] + 0.5 * cx + 0.25 * b[0], 0.25 * a[1] + 0.5 * cy + 0.25 * b[1]] };
+  }
+  function drawRoute(s, places, projFn) {
+    const byId = Object.fromEntries(places.map(p => [p.id, p]));
+    for (let i = 0; i < ROUTE.length - 1; i++) {
+      const A = byId[ROUTE[i][0]], B = byId[ROUTE[i + 1][0]];
+      if (!A || !B) continue;
+      const a = projFn(A.lon, A.lat), b = projFn(B.lon, B.lat);
+      const { d, mid } = arc(a, b, i % 2 ? -0.18 : 0.18);
+      s.appendChild(el("path", { d, class: "route" }));
+      if (Math.hypot(b[0] - a[0], b[1] - a[1]) > 80) s.appendChild(el("text", { x: mid[0], y: mid[1] + (i % 2 ? 14 : -6), class: "route-yr", "text-anchor": "middle" }, ROUTE[i + 1][1]));
+    }
+  }
+
+  async function placesMap(places) {
+    const land = await landPath();
     // crop the view to the inhabited world (roughly 60S to 75N)
     const y0 = proj(0, 78)[1], y1 = proj(0, -58)[1];
     const s = el("svg", { viewBox: `0 ${y0.toFixed(0)} ${W} ${(y1 - y0).toFixed(0)}`, class: "map", role: "img" });
@@ -139,7 +175,8 @@
     s.appendChild(el("desc", {}, "Markers for Bogotá, Manila, Hanoi, Nairobi, and Washington, DC, with a dotted outline around Latin America. Each marker links to the corresponding section."));
     for (let lon = -180; lon <= 180; lon += 30) { const [x] = proj(lon, 0); s.appendChild(el("line", { x1: x, y1: y0, x2: x, y2: y1, class: "grat" })); }
     for (let lat = -60; lat <= 60; lat += 30) { const [, y] = proj(0, lat); s.appendChild(el("line", { x1: 0, y1: y, x2: W, y2: y, class: "grat" })); }
-    if (land) s.appendChild(el("path", { d: land, class: "land", "fill-rule": "evenodd" }));
+    if (land) s.appendChild(landUse());
+    drawRoute(s, places, proj);
     // Latin America region: dotted outline (rough polygon of the region)
     const region = [[-118, 33], [-96, 33], [-84, 20], [-59, 20], [-34, -6], [-38, -20], [-52, -38], [-64, -56], [-76, -50], [-80, -20], [-84, 0], [-98, 12], [-118, 22]];
     s.appendChild(el("path", { d: region.map((p, i) => (i ? "L" : "M") + proj(p[0], p[1]).map(v => v.toFixed(1)).join(" ")).join(" ") + "Z", class: "region" }));
@@ -148,13 +185,39 @@
     places.filter(p => !p.regional).forEach(p => {
       const [x, y] = proj(p.lon, p.lat);
       const g = el("a", { href: "#" + (p.nav === false ? "about" : p.id), class: "mk" + (p.current ? " cur" : ""), "aria-label": p.label + (p.nav === false ? " (current, see About)" : " section") });
-      g.appendChild(el("circle", { cx: x, cy: y, r: 9 }));
+      g.appendChild(el("circle", { cx: x, cy: y, r: 11 }));
       if (p.n) g.appendChild(el("text", { x, y: y + 3, class: "n" }, p.n.replace(/^0/, "")));
-      const right = p.lon < 60;
+      const right = p.labelLeft ? false : p.lon < 60;
       const t = el("text", { x: right ? x + 13 : x - 13, y: y + 4, class: "city", "text-anchor": right ? "start" : "end" }, p.city + (p.current ? " (now)" : ""));
       g.appendChild(t);
       s.appendChild(g);
     });
+    return s;
+  }
+
+  // ---- Locator mini-map for a country section (crop of the world map around the place)
+  async function locator(p) {
+    const land = await landPath();
+    const span = p.regional ? 62 : 34;                 // degrees of longitude shown
+    const cx = p.regional ? -78 : p.lon, cy = p.regional ? -12 : p.lat;
+    const w = span / 360 * W, hgt = w * 0.78;
+    const [px, py] = proj(cx, cy);
+    const x0 = px - w / 2, y0 = py - hgt / 2;
+    const s = el("svg", { viewBox: `${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hgt.toFixed(1)}`, class: "map locator", role: "img" });
+    s.appendChild(el("title", {}, "Map showing " + p.label));
+    s.appendChild(el("rect", { x: x0, y: y0, width: w, height: hgt, class: "sea" }));
+    for (let lon = -180; lon <= 180; lon += 10) { const [x] = proj(lon, 0); s.appendChild(el("line", { x1: x, y1: y0, x2: x, y2: y0 + hgt, class: "grat" })); }
+    for (let lat = -80; lat <= 80; lat += 10) { const [, y] = proj(0, lat); s.appendChild(el("line", { x1: x0, y1: y, x2: x0 + w, y2: y, class: "grat" })); }
+    if (land) s.appendChild(landUse());
+    if (p.regional) {
+      const region = [[-118, 33], [-96, 33], [-84, 20], [-59, 20], [-34, -6], [-38, -20], [-52, -38], [-64, -56], [-76, -50], [-80, -20], [-84, 0], [-98, 12], [-118, 22]];
+      s.appendChild(el("path", { d: region.map((q, i) => (i ? "L" : "M") + proj(q[0], q[1]).map(v => v.toFixed(1)).join(" ")).join(" ") + "Z", class: "region" }));
+    } else {
+      const [x, y] = proj(p.lon, p.lat);
+      s.appendChild(el("circle", { cx: x, cy: y, r: 7, class: "halo" }));
+      s.appendChild(el("circle", { cx: x, cy: y, r: 3.2, class: "dot" }));
+      s.appendChild(el("text", { x: x + 6, y: y - 5, class: "city" }, p.city));
+    }
     return s;
   }
 
@@ -198,9 +261,10 @@
     for (const rx of [60, 120, 180]) s.appendChild(el("ellipse", { cx: 200, cy: 200, rx, ry: 180, class: "grat" }));
     s.appendChild(el("ellipse", { cx: 200, cy: 200, rx: 180, ry: 180, class: "grat" }));
     for (const ry of [60, 120]) s.appendChild(el("ellipse", { cx: 200, cy: 200, rx: 180, ry, class: "grat" }));
-    // orthographic-ish placement: lon/lat to circle using simple equirect inside the circle
+    const pp = (lon, lat) => [200 + (lon / 180) * 175, 200 - (lat / 90) * 150];
+    drawRoute(s, places, pp);
     places.filter(p => !p.regional).forEach(p => {
-      const x = 200 + (p.lon / 180) * 175, y = 200 - (p.lat / 90) * 150;
+      const [x, y] = pp(p.lon, p.lat);
       const g = el("g", { class: "mk" + (p.current ? " cur" : "") });
       g.appendChild(el("circle", { cx: x, cy: y, r: 7 }));
       g.appendChild(el("text", { x: x + 12, y: y + 5, class: "city", style: "font-size:19px" }, p.city));
@@ -212,5 +276,5 @@
     return s;
   }
 
-  window.FIG = { figure, placesMap, careerTimeline, heroPlate };
+  window.FIG = { figure, placesMap, careerTimeline, heroPlate, locator };
 })();

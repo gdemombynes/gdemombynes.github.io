@@ -249,7 +249,7 @@
       "years": "2016–2020",
       "role": "Program Leader for Human Development, Brunei, Malaysia, Philippines, and Thailand",
       "blurb": "Four years in Manila. The work centered on why nearly one Filipino child in three is stunted, on the national ID system, on the 2019 Systematic Country Diagnostic, and, in 2020, on designing and leading the $100 million COVID-19 Emergency Response Health Project that grew into the country's $900 million pandemic and vaccination program.",
-      "figure": null,
+      "figure": "ph-stunting",
       "highlight": {
         "kicker": "Leading the COVID-19 emergency response",
         "title": "The Philippines COVID-19 Emergency Response Project",
@@ -302,7 +302,8 @@
       "years": "2013–2016",
       "role": "Senior Economist, Poverty and Equity",
       "blurb": "Three years in Hanoi leading the data and statistics program. The centerpiece was the first systematic study of hộ khẩu, Vietnam's household registration system, and its effect on migrants' access to public services, alongside the human development pillar of the Vietnam 2035 report and a survey of quality in district and commune health facilities.",
-      "figure": null
+      "figure": null,
+      "labelLeft": true
     },
     {
       "id": "kenya",
@@ -402,5 +403,5 @@
       }
     ]
   },
-  "updated": "2026-09-05"
+  "updated": "2026-09-18"
 }

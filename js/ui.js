@@ -23,7 +23,7 @@
     setTheme(currentTheme());
 
     // Scroll-spy for nav and rail.
-    const links = Array.from(document.querySelectorAll('.nav a[href^="#"], .rail a[href^="#"]'));
+    const links = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
     const targets = Array.from(new Set(links.map(a => a.getAttribute("href").slice(1))))
       .map(id => document.getElementById(id)).filter(Boolean);
     let active = null;

@@ -2,6 +2,16 @@
 
 Personal site of Gabriel Demombynes. A static, single-page site with no build step.
 
+## Building and publishing
+
+`index.html` is generated. Edit `src/index.html` (the template) or anything in `data/`, then run:
+
+```bash
+python3 scripts/build.py
+```
+
+This injects JSON-LD structured data, pre-renders the page with headless Chrome so search engines and link previews see the full content, and writes `sitemap.xml` and `robots.txt`. Then commit and push. If you skip the build, visitors still see fresh data (the JavaScript re-renders from `data/*.json`), but crawlers see the last pre-rendered version.
+
 ## Editing content
 
 Everything on the page is rendered from the JSON files in `data/`:
