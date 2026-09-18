@@ -237,7 +237,8 @@
       "years": "2020–2023",
       "role": "Practice Leader for Human Development",
       "blurb": "Three years in Bogotá leading the World Bank's human development team for Colombia and Venezuela through the pandemic: a national seroprevalence program, a data dashboard for safe reopening, the vaccine production agenda, the 2022 Systematic Country Diagnostic update, and a new measure of learning poverty at the level of every municipality.",
-      "figure": null
+      "figure": null,
+      "color": "#d29b16"
     },
     {
       "id": "philippines",
@@ -290,7 +291,8 @@
           }
         ],
         "source": "Sources: World Bank Project Appraisal Document PAD3869 (April 2020); World Bank press releases of 23 April 2020, 11 March 2021, and 21 December 2021; World Bank results brief, 30 May 2022."
-      }
+      },
+      "color": "#2a6fb7"
     },
     {
       "id": "vietnam",
@@ -303,7 +305,8 @@
       "role": "Senior Economist, Poverty and Equity",
       "blurb": "Three years in Hanoi leading the data and statistics program. The centerpiece was the first systematic study of hộ khẩu, Vietnam's household registration system, and its effect on migrants' access to public services, alongside the human development pillar of the Vietnam 2035 report and a survey of quality in district and commune health facilities.",
       "figure": null,
-      "labelLeft": true
+      "labelLeft": true,
+      "color": "#c0392b"
     },
     {
       "id": "kenya",
@@ -315,7 +318,8 @@
       "years": "2009–2013",
       "role": "Senior Economist, Poverty Reduction and Economic Management",
       "blurb": "Four years in Nairobi. Research on what drove Kenya's remarkably fast decline in infant mortality, on M-PESA and mobile savings, on the 2011 drought, and on jobs; pioneering high-frequency phone surveys across the border in South Sudan; and, from Nairobi, the evaluation of the Millennium Villages Project.",
-      "figure": "kenya-imr"
+      "figure": "kenya-imr",
+      "color": "#2e8b57"
     },
     {
       "id": "latam",
@@ -328,7 +332,8 @@
       "role": "Economist, Latin America and the Caribbean Poverty Group",
       "regional": true,
       "blurb": "Before Nairobi, four years on the World Bank's Latin America poverty team working on data and statistics across the region: the crime and violence study for Central America, the market for private schools in Haiti, and earnings inequality in Argentina. Later, from Bogotá, comparative work on COVID-19 mortality across countries.",
-      "figure": "covid-under65"
+      "figure": "covid-under65",
+      "color": "#7b4fa3"
     },
     {
       "id": "dc",
@@ -340,7 +345,8 @@
       "years": "2023–",
       "role": "Manager, Human Capital Project",
       "nav": false,
-      "current": true
+      "current": true,
+      "color": "#a3382b"
     }
   ],
   "mvp": {

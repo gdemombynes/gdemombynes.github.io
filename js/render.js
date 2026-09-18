@@ -75,6 +75,10 @@
         h("div", { class: "kicker", text: s.tagline }),
         h("h1", {}, nameParts.length > 2 ? [nameParts[0] + " ", h("span", { class: "mid", text: nameParts[1] + " " }), nameParts.slice(2).join(" ")] : [nameParts[0], h("br"), nameParts.slice(1).join(" ")]),
         h("p", { class: "role", text: s.headline }),
+        h("div", { class: "logos" }, [
+          h("a", Object.assign({ href: "https://www.worldbank.org/en/publication/human-capital", "aria-label": "Human Capital Project" }, ext), [h("img", { src: "assets/media/hcp-white.png", alt: "Human Capital Project", width: 520, height: 241 })]),
+          h("a", Object.assign({ href: "https://www.worldbank.org/", "aria-label": "World Bank Group" }, ext), [h("img", { src: "assets/media/wbg-white.png", alt: "World Bank Group", width: 520, height: 236 })])
+        ]),
         h("p", { class: "profile", text: s.profile }),
         h("div", { class: "bio" }, s.bio.map(t => h("p", { text: t }))),
         h("dl", { class: "facts" }, [
@@ -207,13 +211,13 @@
     root.appendChild(wrap);
     wrap.appendChild(await FIG.placesMap(S.site.places));
     const nav = S.site.places.filter(p => p.nav !== false);
-    root.appendChild(h("ul", { class: "place-index" }, nav.map(p => h("li", {}, [h("a", { href: "#" + p.id }, [h("span", { class: "n", text: p.n }), p.label])]))));
+    root.appendChild(h("ul", { class: "place-index" }, nav.map(p => h("li", {}, [h("a", { href: "#" + p.id, style: p.color ? `--place: ${p.color}` : null }, [h("span", { class: "n", text: p.n }), p.label])]))));
     const host = $("#country-sections");
     let figN = 3;
     nav.forEach(p => {
       const papers = S.papers.filter(x => x.countries.includes(p.id)).sort(byYearDesc);
       const posts = S.posts.filter(x => x.countries.includes(p.id) && !x.collections.includes("mvp")).sort(byDateDesc);
-      const sec = h("section", { class: "sec country", id: p.id, "aria-labelledby": p.id + "-h" });
+      const sec = h("section", { class: "sec country", id: p.id, "aria-labelledby": p.id + "-h", style: p.color ? `--place: ${p.color}` : null });
       sec.appendChild(h("div", { class: "runhead" }, [
         h("span", { class: "num", text: "§ 2." + p.n.replace(/^0/, "") }),
         h("span", { text: p.label }),
@@ -338,6 +342,10 @@
 
   function renderFooter(S) {
     const s = S.site, root = $("#foot");
+    root.appendChild(h("div", { class: "logos foot-logos" }, [
+      h("a", Object.assign({ href: "https://www.worldbank.org/en/publication/human-capital", "aria-label": "Human Capital Project" }, ext), [h("img", { class: "logo-navy", src: "assets/media/hcp-navy.png", alt: "Human Capital Project", width: 520, height: 241 }), h("img", { class: "logo-white", src: "assets/media/hcp-white.png", alt: "", width: 520, height: 241 })]),
+      h("a", Object.assign({ href: "https://www.worldbank.org/", "aria-label": "World Bank Group" }, ext), [h("img", { class: "logo-navy", src: "assets/media/wbg-navy.png", alt: "World Bank Group", width: 520, height: 236 }), h("img", { class: "logo-white", src: "assets/media/wbg-white.png", alt: "", width: 520, height: 236 })])
+    ]));
     root.appendChild(h("div", { class: "frow" }, [
       h("a", Object.assign({ href: s.links.worldbank }, ext), "World Bank"), h("a", Object.assign({ href: s.links.wbblogs }, ext), "World Bank Blogs"),
       h("a", Object.assign({ href: s.links.scholar }, ext), "Google Scholar"), h("a", Object.assign({ href: s.links.ideas }, ext), "IDEAS/RePEc"),

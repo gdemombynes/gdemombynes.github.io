@@ -184,7 +184,7 @@
     s.appendChild(el("text", { x: la[0], y: la[1], class: "lbl" }, "05 · Latin America"));
     places.filter(p => !p.regional).forEach(p => {
       const [x, y] = proj(p.lon, p.lat);
-      const g = el("a", { href: "#" + (p.nav === false ? "about" : p.id), class: "mk" + (p.current ? " cur" : ""), "aria-label": p.label + (p.nav === false ? " (current, see About)" : " section") });
+      const g = el("a", { href: "#" + (p.nav === false ? "about" : p.id), class: "mk" + (p.current ? " cur" : ""), "aria-label": p.label + (p.nav === false ? " (current, see About)" : " section"), style: p.color ? `--place: ${p.color}` : null });
       g.appendChild(el("circle", { cx: x, cy: y, r: 11 }));
       if (p.n) g.appendChild(el("text", { x, y: y + 3, class: "n" }, p.n.replace(/^0/, "")));
       const right = p.labelLeft ? false : p.lon < 60;
@@ -203,7 +203,7 @@
     const w = span / 360 * W, hgt = w * 0.78;
     const [px, py] = proj(cx, cy);
     const x0 = px - w / 2, y0 = py - hgt / 2;
-    const s = el("svg", { viewBox: `${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hgt.toFixed(1)}`, class: "map locator", role: "img" });
+    const s = el("svg", { viewBox: `${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hgt.toFixed(1)}`, class: "map locator", role: "img", style: p.color ? `--place: ${p.color}` : null });
     s.appendChild(el("title", {}, "Map showing " + p.label));
     s.appendChild(el("rect", { x: x0, y: y0, width: w, height: hgt, class: "sea" }));
     for (let lon = -180; lon <= 180; lon += 10) { const [x] = proj(lon, 0); s.appendChild(el("line", { x1: x, y1: y0, x2: x, y2: y0 + hgt, class: "grat" })); }
@@ -265,7 +265,7 @@
     drawRoute(s, places, pp);
     places.filter(p => !p.regional).forEach(p => {
       const [x, y] = pp(p.lon, p.lat);
-      const g = el("g", { class: "mk" + (p.current ? " cur" : "") });
+      const g = el("g", { class: "mk" + (p.current ? " cur" : ""), style: p.color ? `--place: ${p.color}` : null });
       g.appendChild(el("circle", { cx: x, cy: y, r: 7 }));
       g.appendChild(el("text", { x: x + 12, y: y + 5, class: "city", style: "font-size:19px" }, p.city));
       s.appendChild(g);
