@@ -83,16 +83,10 @@
         h("div", { class: "bio" }, s.bio.map(t => h("p", { text: t }))),
         h("dl", { class: "facts" }, [
           h("dt", { text: "Education" }), h("dd", {}, s.education.map(e => h("div", {}, [e.url ? h("a", Object.assign({ href: e.url }, ext), e.inst ? `${e.degree}, ${e.inst}` : e.degree) : (e.inst ? `${e.degree}, ${e.inst}` : e.degree), `, ${e.year}`]))),
-          h("dt", { text: "Languages" }), h("dd", { text: s.languages.join(", ") }),
-          h("dt", { text: "Citizenship" }), h("dd", { text: s.citizenship.join(" and ") })
-        ]),
-        h("div", { class: "metrics" }, [
-          `${s.metrics.citations.toLocaleString()}+ citations · h-index ${s.metrics.h_index} · `,
-          h("a", Object.assign({ href: s.links.scholar }, ext), "Google Scholar"),
-          ` · as of ${s.metrics.as_of}`
         ]),
         h("div", { class: "links-row" }, [
           h("a", Object.assign({ href: s.links.worldbank }, ext), "World Bank profile"),
+          h("a", Object.assign({ href: s.links.scholar }, ext), "Google Scholar"),
           h("a", Object.assign({ href: s.links.linkedin }, ext), "LinkedIn"),
           h("a", Object.assign({ href: s.links.ideas }, ext), "IDEAS/RePEc"),
           h("a", Object.assign({ href: s.links.github }, ext), "GitHub")
@@ -351,7 +345,7 @@
       h("a", Object.assign({ href: s.links.scholar }, ext), "Google Scholar"), h("a", Object.assign({ href: s.links.ideas }, ext), "IDEAS/RePEc"),
       h("a", Object.assign({ href: s.links.linkedin }, ext), "LinkedIn"), h("a", Object.assign({ href: s.links.github }, ext), "GitHub"), h("a", Object.assign({ href: s.links.bulletin }, ext), "AI & Human Capital Bits")
     ]));
-    root.appendChild(h("div", { text: `${s.name} · ${s.languages.join(", ")} · Citizen of the ${s.citizenship.join(" and ")}. Views expressed here are his own.` }));
+    root.appendChild(h("div", { text: `${s.name}. Views expressed here are his own.` }));
     root.appendChild(h("div", { class: "colophon", text: `Last updated ${fmtDate(s.updated)} · Set in Newsreader and IBM Plex · No tracking · Source on GitHub` }));
   }
 
